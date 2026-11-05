@@ -78,6 +78,18 @@ export default function App() {
     document.title = pageTitle;
     const descTag = document.querySelector('meta[name="description"]');
     if (descTag) descTag.setAttribute('content', metaDesc);
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', pageTitle);
+
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', metaDesc);
+
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('content', window.location.href);
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute('href', window.location.origin + currentPath);
   }, [currentPath]);
 
   const selectFirstVisitLang = (code) => {

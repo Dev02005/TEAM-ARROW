@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070e1b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Pill Icon Badge -->
+  <g transform="translate(100, 110)">
+    <rect width="84" height="84" rx="22" fill="#0284c7" fill-opacity="0.15" stroke="#0284c7" stroke-width="2"/>
+    <path d="M30 54 L54 30 A10 10 0 1 0 40 16 L16 40 A10 10 0 1 0 30 54 Z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26 26 L44 44" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- SFIC Badge -->
+  <rect x="204" y="132" width="220" height="40" rx="20" fill="#0369a1" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="314" y="157" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1">SEVA FIRST 2026</text>
+
+  <!-- Main Title -->
+  <text x="100" y="270" fill="#ffffff" font-family="system-ui, sans-serif" font-size="64" font-weight="900" letter-spacing="-1">
+    AushadhSeva <tspan fill="#38bdf8">(औषध सेवा)</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="100" y="330" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="28" font-weight="600">
+    Medication Safety &amp; Clinical Decision Support System
+  </text>
+
+  <!-- Features list -->
+  <g transform="translate(100, 400)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="310" height="52" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="32" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700">8 Indian Languages + TTS</text>
+
+    <!-- Pill 2 -->
+    <rect x="330" y="0" width="310" height="52" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="354" y="32" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700">KDIGO Renal Safety Rules</text>
+
+    <!-- Pill 3 -->
+    <rect x="660" y="0" width="340" height="52" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="684" y="32" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Live OpenFDA &amp; RxNorm</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="618" width="1200" height="12" fill="url(#accent)"/>
+</svg>

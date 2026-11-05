@@ -54,6 +54,17 @@ body:is(.lang-te, .lang-hi, .lang-ta, .lang-ml, .lang-kn, .lang-or, .lang-ur) :i
 .ez-lang-btn[lang="or"] { font-family: 'Noto Sans Oriya', sans-serif; }
 .ez-lang-btn[lang="ur"] { font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', sans-serif; }
 
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
 /* ---- Text size control ------------------------------------------------------ */
 html[data-text="large"] {
   font-size: 17px;
@@ -62,33 +73,37 @@ html[data-text="xlarge"] {
   font-size: 19px;
 }
 
-/* Scaling the main content wrapper with CSS zoom for WebKit/Blink/Edge */
-html[data-text="large"] :is(.app-main-wrapper, .app-container) {
-  zoom: 1.14;
-}
-html[data-text="xlarge"] :is(.app-main-wrapper, .app-container) {
-  zoom: 1.28;
+/* Scaling the main content wrapper with CSS zoom on desktop screens (≥1025px) */
+@media (min-width: 1025px) {
+  html[data-text="large"] :is(.app-main-wrapper, .app-container) {
+    zoom: 1.14;
+    max-width: calc(1140px / 1.14);
+  }
+  html[data-text="xlarge"] :is(.app-main-wrapper, .app-container) {
+    zoom: 1.28;
+    max-width: calc(1140px / 1.28);
+  }
 }
 
-/* Cross-browser font-size scaling fallback for Firefox & non-zoom engines */
-@supports not (zoom: 1) {
+/* On tablet & mobile (≤1024px): typography and component scaling without horizontal overflow */
+@media (max-width: 1024px) {
   html[data-text="large"] body {
     font-size: 17.5px;
   }
   html[data-text="xlarge"] body {
-    font-size: 20px;
+    font-size: 19.5px;
   }
   html[data-text="large"] :is(.app-main-wrapper, .app-container) :is(p, span, label, input, button, select, textarea, td, th) {
-    font-size: 1.12em !important;
+    font-size: 1.08em;
   }
   html[data-text="xlarge"] :is(.app-main-wrapper, .app-container) :is(p, span, label, input, button, select, textarea, td, th) {
-    font-size: 1.25em !important;
+    font-size: 1.2em;
   }
   html[data-text="large"] :is(h1, .ez-hero__title, .ez-page-title) {
-    font-size: 1.15em !important;
+    font-size: 1.12em;
   }
   html[data-text="xlarge"] :is(h1, .ez-hero__title, .ez-page-title) {
-    font-size: 1.28em !important;
+    font-size: 1.24em;
   }
 }
 

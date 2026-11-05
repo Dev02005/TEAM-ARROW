@@ -40,7 +40,10 @@ async function check(url, method = 'GET', body = null) {
     ['HTML Route /my-prescriptions', 'http://localhost:5000/my-prescriptions', 'GET'],
     ['HTML Route /patients', 'http://localhost:5000/patients', 'GET'],
     ['HTML Route /login', 'http://localhost:5000/login', 'GET'],
-    ['HTML Route /register', 'http://localhost:5000/register', 'GET']
+    ['HTML Route /register', 'http://localhost:5000/register', 'GET'],
+    ['SEO Robots.txt', 'http://localhost:5000/robots.txt', 'GET'],
+    ['SEO Sitemap.xml', 'http://localhost:5000/sitemap.xml', 'GET'],
+    ['SEO OG-Image SVG', 'http://localhost:5000/og-image.svg', 'GET']
   ];
 
   console.log('Testing AushadhSeva endpoints...');
@@ -52,7 +55,7 @@ async function check(url, method = 'GET', body = null) {
     console.log(`[${pass ? 'OK' : 'FAIL'}] ${name}: status=${res.status || 'ERR'}, length=${res.length || 0}`);
   }
   if (allPass) {
-    console.log('\nAll 19 tests PASSED successfully!');
+    console.log(`\nAll ${tests.length} tests PASSED successfully!`);
   } else {
     console.log('\nSome tests FAILED.');
   }
