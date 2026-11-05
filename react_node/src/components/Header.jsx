@@ -18,7 +18,7 @@ import {
 } from './Icons';
 
 export default function Header({ currentPath, navigate }) {
-  const { lang, setLang, cycleTextSize, t, supportedLangs } = useI18n();
+  const { lang, setLang, textSize, cycleTextSize, t, supportedLangs } = useI18n();
   const { user, isAdmin, logout } = useAuth();
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const langDropdownRef = useRef(null);
@@ -197,12 +197,45 @@ export default function Header({ currentPath, navigate }) {
             {/* Text size button */}
             <button
               type="button"
-              className="ez-pill-btn"
+              className={`ez-pill-btn ${textSize !== 'normal' ? 'is-active' : ''}`}
               onClick={cycleTextSize}
-              aria-label={t('text.size_label')}
-              title={t('text.size_label')}
+              aria-label={`${t('text.size_label') || 'Text size'}: ${textSize}`}
+              title={`${t('text.size_label') || 'Text size'}: ${
+                textSize === 'normal'
+                  ? 'Normal (Click for Large)'
+                  : textSize === 'large'
+                  ? 'Large (+15%) (Click for Extra Large)'
+                  : 'Extra Large (+30%) (Click for Normal)'
+              }`}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
+                background: textSize === 'xlarge' ? '#bae6fd' : textSize === 'large' ? '#e0f2fe' : '#ffffff',
+                borderColor: textSize !== 'normal' ? '#0284c7' : 'var(--ez-line)',
+                color: textSize !== 'normal' ? '#0284c7' : 'var(--ez-text)',
+                fontWeight: 700
+              }}
             >
-              <span aria-hidden="true" className="ez-aa">A<small>A</small></span>
+              <span aria-hidden="true" className="ez-aa">
+                <span className="ez-aa__big">A</span>
+                <span className="ez-aa__small">A</span>
+              </span>
+              {textSize !== 'normal' && (
+                <span
+                  style={{
+                    fontSize: '11px',
+                    fontWeight: 800,
+                    padding: '1px 5px',
+                    borderRadius: '999px',
+                    background: '#0284c7',
+                    color: '#ffffff',
+                    lineHeight: '1.2'
+                  }}
+                >
+                  {textSize === 'large' ? '+15%' : '+30%'}
+                </span>
+              )}
             </button>
 
             {/* User profile / Login */}

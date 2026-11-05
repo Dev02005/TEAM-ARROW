@@ -55,10 +55,51 @@ body:is(.lang-te, .lang-hi, .lang-ta, .lang-ml, .lang-kn, .lang-or, .lang-ur) :i
 .ez-lang-btn[lang="ur"] { font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', sans-serif; }
 
 /* ---- Text size control ------------------------------------------------------ */
-html[data-text="large"]  .app-container { zoom: 1.15; }
-html[data-text="xlarge"] .app-container { zoom: 1.3; }
-html[data-text="large"]  .clinical-disclaimer-bar { font-size: 15px; }
-html[data-text="xlarge"] .clinical-disclaimer-bar { font-size: 16.5px; }
+html[data-text="large"] {
+  font-size: 17px;
+}
+html[data-text="xlarge"] {
+  font-size: 19px;
+}
+
+/* Scaling the main content wrapper with CSS zoom for WebKit/Blink/Edge */
+html[data-text="large"] :is(.app-main-wrapper, .app-container) {
+  zoom: 1.14;
+}
+html[data-text="xlarge"] :is(.app-main-wrapper, .app-container) {
+  zoom: 1.28;
+}
+
+/* Cross-browser font-size scaling fallback for Firefox & non-zoom engines */
+@supports not (zoom: 1) {
+  html[data-text="large"] body {
+    font-size: 17.5px;
+  }
+  html[data-text="xlarge"] body {
+    font-size: 20px;
+  }
+  html[data-text="large"] :is(.app-main-wrapper, .app-container) :is(p, span, label, input, button, select, textarea, td, th) {
+    font-size: 1.12em !important;
+  }
+  html[data-text="xlarge"] :is(.app-main-wrapper, .app-container) :is(p, span, label, input, button, select, textarea, td, th) {
+    font-size: 1.25em !important;
+  }
+  html[data-text="large"] :is(h1, .ez-hero__title, .ez-page-title) {
+    font-size: 1.15em !important;
+  }
+  html[data-text="xlarge"] :is(h1, .ez-hero__title, .ez-page-title) {
+    font-size: 1.28em !important;
+  }
+}
+
+html[data-text="large"] .clinical-disclaimer-bar {
+  font-size: 15.5px;
+  padding: 13px 24px;
+}
+html[data-text="xlarge"] .clinical-disclaimer-bar {
+  font-size: 17.5px;
+  padding: 15px 24px;
+}
 
 /* ---- Accessibility basics --------------------------------------------------- */
 .ez-skip {
@@ -89,8 +130,25 @@ html[data-text="xlarge"] .clinical-disclaimer-bar { font-size: 16.5px; }
   background-color: #e0f2fe !important;
   color: var(--ez-primary) !important;
 }
-.ez-aa { font-weight: 800; font-size: 15px; }
-.ez-aa small { font-size: 21px; margin-left: 1px; }
+.ez-aa {
+  display: inline-flex;
+  align-items: baseline;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.ez-aa__big, .ez-aa > span:first-child {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+}
+.ez-aa__small, .ez-aa small, .ez-aa > span:last-child {
+  font-size: 11.5px !important;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 1px;
+  opacity: 0.85;
+}
 
 /* ---- Language sheet --------------------------------------------------------- */
 .ez-sheet {
