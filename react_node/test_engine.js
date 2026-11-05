@@ -1,7 +1,7 @@
 const path = require('path');
 const { SafetyEngineH4 } = require('./server/pipeline/SafetyEngineH4');
 
-const dataDir = path.resolve('FULL_CODE/data');
+const dataDir = path.resolve(__dirname, '../FULL_CODE/data');
 console.log('Testing SafetyEngineH4 with dataDir:', dataDir);
 
 const engine = new SafetyEngineH4(dataDir);
