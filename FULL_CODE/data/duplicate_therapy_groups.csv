@@ -1,0 +1,75 @@
+duplicate_group,group_name,severity,recommended_action,member_generics
+nsaid,"NSAIDs (non-aspirin, incl. COX-2)",major,"Stop one NSAID - never combine two NSAIDs (GI bleed, AKI)",aceclofenac;celecoxib;diclofenac;etoricoxib;ibuprofen;indomethacin;ketorolac;lornoxicam;mefenamic acid;meloxicam;naproxen;nimesulide;piroxicam
+paracetamol,Paracetamol (any product),major,Paracetamol from two products - risk of exceeding 4 g/day (liver toxicity); keep one source,paracetamol
+aspirin,Aspirin (any product),moderate,Aspirin from two products - keep a single aspirin source,aspirin
+p2y12,P2Y12 antiplatelets,major,Two P2Y12 inhibitors / clopidogrel twice - keep one (bleeding),clopidogrel;prasugrel;ticagrelor
+anticoag,"Anticoagulants (VKA, DOAC, heparins)",major,Two anticoagulants - confirm whether this is a planned bridge; otherwise stop one (bleeding),acenocoumarol;apixaban;dabigatran;edoxaban;enoxaparin;fondaparinux;heparin;rivaroxaban;warfarin
+acei,ACE inhibitors,major,"Two ACE inhibitors / same ACE inhibitor twice - keep one (hypotension, hyperkalaemia, AKI)",captopril;enalapril;lisinopril;perindopril;ramipril;trandolapril
+arb,Angiotensin receptor blockers (incl. valsartan in sacubitril/valsartan),major,"Two ARBs / same ARB twice - keep one (hypotension, hyperkalaemia, AKI)",azilsartan;candesartan;irbesartan;losartan;olmesartan;telmisartan;valsartan
+bb,Beta-blockers,major,"Two beta-blockers / same beta-blocker twice - keep one (bradycardia, hypotension)",atenolol;bisoprolol;carvedilol;labetalol;metoprolol;nadolol;nebivolol;propranolol;sotalol
+dhp_ccb,Dihydropyridine calcium channel blockers,moderate,"Two dihydropyridine CCBs / duplicated amlodipine - keep one (hypotension, oedema)",amlodipine;azelnidipine;benidipine;cilnidipine;felodipine;lacidipine;lercanidipine;levamlodipine;nicardipine;nifedipine
+nondhp_ccb,Non-dihydropyridine calcium channel blockers,major,"Diltiazem with verapamil / duplicated - keep one (bradycardia, heart block)",diltiazem;verapamil
+thiazide,Thiazide / thiazide-like diuretics,moderate,"Duplicated thiazide - keep one (hypokalaemia, hyponatraemia)",chlorthalidone;hydrochlorothiazide;indapamide;metolazone
+loop,Loop diuretics,moderate,"Two loop diuretics - keep one (dehydration, electrolyte loss)",bumetanide;furosemide;torsemide
+ksparing,Potassium-sparing diuretics,major,Duplicated potassium-sparing diuretic - keep one (hyperkalaemia),amiloride;eplerenone;spironolactone
+alpha1,Alpha-1 blockers (BPH and antihypertensive),moderate,"Two alpha-1 blockers - keep one (postural hypotension, falls)",alfuzosin;doxazosin;prazosin;silodosin;tamsulosin;terazosin
+alpha2,Central alpha-2 agonists,moderate,Duplicated central antihypertensive - keep one,clonidine;methyldopa;moxonidine
+nitrate_long,Long-acting oral nitrates,moderate,"Two long-acting nitrates - keep one (hypotension, headache, tolerance)",isosorbide dinitrate;isosorbide mononitrate
+statin,Statins,moderate,Two statins / same statin twice - keep one statin at the right dose (myopathy),atorvastatin;fluvastatin;pitavastatin;pravastatin;rosuvastatin;simvastatin
+fibrate,Fibrates,moderate,Two fibrates - keep one,fenofibrate;gemfibrozil
+biguanide,Metformin (any product),moderate,"Metformin from two products - check total daily dose (GI effects, lactic acidosis)",metformin
+sulfonylurea,Sulfonylureas,major,Two sulfonylureas / same sulfonylurea twice - keep one (severe hypoglycaemia),glibenclamide;gliclazide;glimepiride;glipizide
+dpp4,DPP-4 inhibitors,moderate,Two DPP-4 inhibitors / duplicated gliptin - keep one,alogliptin;linagliptin;saxagliptin;sitagliptin;teneligliptin;vildagliptin
+sglt2,SGLT2 inhibitors,moderate,Two SGLT2 inhibitors / duplicated gliflozin - keep one,canagliflozin;dapagliflozin;empagliflozin;remogliflozin
+agi,Alpha-glucosidase inhibitors,moderate,Duplicated alpha-glucosidase inhibitor - keep one,acarbose;miglitol;voglibose
+glp1,GLP-1 receptor agonists,moderate,Two GLP-1 receptor agonists - keep one,dulaglutide;liraglutide;semaglutide
+antithyroid,Antithyroid thionamides,moderate,Two antithyroid drugs - keep one,carbimazole;methimazole;propylthiouracil
+steroid,Systemic corticosteroids,moderate,Two systemic corticosteroids - consolidate to one,deflazacort;dexamethasone;hydrocortisone;methylprednisolone;prednisolone
+bisphosphonate,Oral bisphosphonates,moderate,Two bisphosphonates - keep one,alendronate;ibandronate;risedronate
+active_vitd,Active vitamin D (calcitriol/alfacalcidol),moderate,Duplicated active vitamin D - keep one (hypercalcaemia),alfacalcidol;calcitriol
+vitd,"Vitamin D3 (cholecalciferol, any product)",minor,Cholecalciferol from two products - check total weekly dose,cholecalciferol
+calcium,Calcium salts,minor,Calcium from two products - check total elemental calcium,calcium acetate;calcium carbonate;calcium citrate
+iron,Oral iron salts,minor,Iron from two products - keep one iron preparation,ferrous ascorbate;ferrous fumarate;ferrous sulfate
+folate,Folic acid (any product),minor,Folic acid from two products - keep one,folic acid
+b12,Vitamin B12 (methylcobalamin/cyanocobalamin),minor,Vitamin B12 from two products - keep one,cyanocobalamin;methylcobalamin
+b6,Vitamin B6 (any product),minor,Pyridoxine from two products - keep one,pyridoxine
+ppi,Proton pump inhibitors,minor,Two PPIs / same PPI twice - keep one PPI once daily,dexlansoprazole;esomeprazole;ilaprazole;lansoprazole;omeprazole;pantoprazole;rabeprazole
+h2ra,H2-receptor antagonists,minor,Two H2 blockers - keep one,famotidine;ranitidine
+prokinetic,"Dopamine-antagonist prokinetics (domperidone, metoclopramide, itopride, levosulpiride)",moderate,Two prokinetics / duplicated domperidone - keep one (extrapyramidal and QT risk),domperidone;itopride;levosulpiride;metoclopramide
+antacid,Antacids,minor,Duplicated antacid - keep one,aluminium hydroxide;magnesium aluminium silicate;magnesium hydroxide
+laxative,Laxatives,minor,Two laxatives - review need,bisacodyl;docusate;ispaghula husk;lactulose;liquid paraffin;polyethylene glycol;senna;sodium picosulfate
+antispasmodic,Antispasmodics,minor,Two antispasmodics / duplicated dicyclomine - keep one,dicyclomine;drotaverine;hyoscine butylbromide;mebeverine
+ssri_snri,SSRIs / SNRIs,major,"Two SSRI/SNRI antidepressants - keep one (serotonin syndrome, bleeding)",citalopram;desvenlafaxine;duloxetine;escitalopram;fluoxetine;fluvoxamine;paroxetine;sertraline;venlafaxine
+tca,Tricyclic antidepressants,major,Two tricyclics / duplicated tricyclic - keep one (anticholinergic and cardiac toxicity),amitriptyline;clomipramine;dosulepin;doxepin;imipramine;nortriptyline
+benzo,Benzodiazepines and thienodiazepines,moderate,"Two benzodiazepines / duplicated - keep one (sedation, falls, respiratory depression)",alprazolam;chlordiazepoxide;clobazam;clonazepam;diazepam;etizolam;lorazepam;midazolam;nitrazepam
+z_drug,Z-drug hypnotics,moderate,Two Z-drug hypnotics - keep one,zolpidem;zopiclone
+antipsychotic,Antipsychotics,moderate,"Two antipsychotics - confirm intentional; otherwise keep one (metabolic, QT, EPS)",amisulpride;aripiprazole;chlorpromazine;clozapine;haloperidol;olanzapine;paliperidone;quetiapine;risperidone;trifluoperazine
+opioid,Opioids,major,"Two opioids / duplicated tramadol - keep one (respiratory depression, serotonin toxicity)",buprenorphine;codeine;fentanyl;methadone;morphine;oxycodone;pethidine;tapentadol;tramadol
+gabapentinoid,Gabapentinoids,major,"Gabapentin with pregabalin / duplicated - keep one (sedation, respiratory depression)",gabapentin;pregabalin
+muscle_relaxant,Skeletal muscle relaxants,moderate,Two muscle relaxants - keep one (sedation),baclofen;chlorzoxazone;eperisone;methocarbamol;thiocolchicoside;tizanidine
+xo_inhibitor,Xanthine oxidase inhibitors,moderate,Allopurinol with febuxostat - keep one,allopurinol;febuxostat
+thiopurine,Thiopurines,major,Two thiopurines - keep one (myelosuppression),azathioprine;mercaptopurine
+calcineurin,Calcineurin inhibitors,major,Two calcineurin inhibitors - specialist review,cyclosporine;tacrolimus
+cholinesterase,Cholinesterase inhibitors,moderate,"Two cholinesterase inhibitors - keep one (bradycardia, GI effects)",donepezil;galantamine;rivastigmine
+dopamine_agonist,Dopamine agonists (non-ergot),moderate,Two dopamine agonists - keep one,pramipexole;ropinirole
+maob,MAO-B inhibitors,moderate,Two MAO-B inhibitors - keep one,rasagiline;selegiline
+triptan,Triptans,moderate,Two triptans - do not combine within 24 h,rizatriptan;sumatriptan
+saba,Short-acting beta-2 agonists,minor,Two short-acting bronchodilators - keep one reliever,levosalbutamol;salbutamol;terbutaline
+xanthine,Methylxanthines,moderate,Two methylxanthines / duplicated theophylline - keep one (toxicity),acebrophylline;doxofylline;etofylline;theophylline
+ltra,Montelukast (any product),minor,Montelukast from two products - keep one,montelukast
+mucolytic,Mucolytics,minor,Two mucolytics - keep one,acetylcysteine;ambroxol;bromhexine;carbocisteine;erdosteine
+h1,Oral H1 antihistamines,minor,Two oral antihistamines - keep one,bilastine;cetirizine;chlorpheniramine;desloratadine;diphenhydramine;ebastine;fexofenadine;hydroxyzine;ketotifen;levocetirizine;loratadine;promethazine;rupatadine
+5ari,5-alpha reductase inhibitors,minor,Finasteride with dutasteride / duplicated - keep one,dutasteride;finasteride
+pde5,PDE5 inhibitors,moderate,Two PDE5 inhibitors - keep one (hypotension),sildenafil;tadalafil;vardenafil
+antimuscarinic_bladder,Bladder antimuscarinics,moderate,Two bladder antimuscarinics - keep one (anticholinergic burden),darifenacin;oxybutynin;solifenacin;tolterodine;trospium
+progestogen,Progestogens,moderate,Two progestogens - keep one,dydrogesterone;medroxyprogesterone;norethisterone;progesterone
+penicillin,Penicillins,moderate,Two penicillins / duplicated amoxicillin - keep one,amoxicillin;ampicillin;benzathine penicillin;cloxacillin;piperacillin
+cephalosporin,Cephalosporins,moderate,Two cephalosporins - keep one,cefadroxil;cefalexin;cefazolin;cefepime;cefixime;cefoperazone;cefpodoxime;ceftazidime;ceftriaxone;cefuroxime
+carbapenem,Carbapenems,moderate,Duplicated carbapenem - keep one,faropenem;meropenem
+macrolide,Macrolides,moderate,"Two macrolides - keep one (QT, interactions)",azithromycin;clarithromycin;erythromycin;roxithromycin
+fluoroquinolone,Fluoroquinolones,moderate,"Two fluoroquinolones / duplicated - keep one (QT, tendon, CNS)",ciprofloxacin;levofloxacin;moxifloxacin;norfloxacin;ofloxacin
+tetracycline,Tetracyclines,moderate,Two tetracyclines - keep one,doxycycline;minocycline;tetracycline
+nitroimidazole,Nitroimidazoles,moderate,Two nitroimidazoles / duplicated - keep one (neurotoxicity),metronidazole;ornidazole;satranidazole;secnidazole;tinidazole
+aminoglycoside,Aminoglycosides,major,Two aminoglycosides - keep one (nephro-/ototoxicity),amikacin;gentamicin;streptomycin;tobramycin
+azole,Systemic azole antifungals,moderate,Two systemic azoles - keep one,fluconazole;itraconazole;ketoconazole;posaconazole;voriconazole
+antiherpes,Anti-herpes nucleoside analogues,moderate,Two anti-herpes antivirals - keep one (renal/CNS toxicity),acyclovir;famciclovir;valacyclovir

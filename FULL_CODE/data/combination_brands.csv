@@ -1,0 +1,99 @@
+brand_name,strength_label,dose_form,components,generic_components
+Combiflam,,tab,ibuprofen 400 mg + paracetamol 325 mg,ibuprofen;paracetamol
+Ibugesic Plus,,tab,ibuprofen 400 mg + paracetamol 325 mg,ibuprofen;paracetamol
+Zerodol-P,,tab,aceclofenac 100 mg + paracetamol 325 mg,aceclofenac;paracetamol
+Hifenac-P,,tab,aceclofenac 100 mg + paracetamol 325 mg,aceclofenac;paracetamol
+Zerodol-SP,,tab,aceclofenac 100 mg + paracetamol 325 mg + serratiopeptidase 15 mg,aceclofenac;paracetamol;serratiopeptidase
+Zerodol-MR,,tab,aceclofenac 100 mg + tizanidine 2 mg,aceclofenac;tizanidine
+Sumo,,tab,nimesulide 100 mg + paracetamol 325 mg,nimesulide;paracetamol
+Ultracet,,tab,tramadol 37.5 mg + paracetamol 325 mg,paracetamol;tramadol
+Meftal-Spas,,tab,mefenamic acid 250 mg + dicyclomine 10 mg,dicyclomine;mefenamic acid
+Meftal Forte,,tab,mefenamic acid 500 mg + paracetamol 325 mg,mefenamic acid;paracetamol
+Cyclopam,,tab,dicyclomine 20 mg + paracetamol 500 mg,dicyclomine;paracetamol
+Drotin-M,,tab,drotaverine 80 mg + mefenamic acid 250 mg,drotaverine;mefenamic acid
+Naxdom,250,tab,naproxen 250 mg + domperidone 10 mg,domperidone;naproxen
+Naxdom,500,tab,naproxen 500 mg + domperidone 10 mg,domperidone;naproxen
+Saridon,,tab,propyphenazone 150 mg + paracetamol 250 mg + caffeine 50 mg,caffeine;paracetamol;propyphenazone
+Telma-H,40,tab,telmisartan 40 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide;telmisartan
+Telma-H,80,tab,telmisartan 80 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide;telmisartan
+Telma-AM,,tab,telmisartan 40 mg + amlodipine 5 mg,amlodipine;telmisartan
+Telmikind-H,,tab,telmisartan 40 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide;telmisartan
+Losar-H,,tab,losartan 50 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide;losartan
+Repace-H,,tab,losartan 50 mg + hydrochlorothiazide 12.5 mg,hydrochlorothiazide;losartan
+Amlopres-AT,,tab,amlodipine 5 mg + atenolol 50 mg,amlodipine;atenolol
+Stamlo Beta,,tab,amlodipine 5 mg + atenolol 50 mg,amlodipine;atenolol
+Tenoric,,tab,atenolol 50 mg + chlorthalidone 12.5 mg,atenolol;chlorthalidone
+Lasilactone,,tab,furosemide 20 mg + spironolactone 50 mg,furosemide;spironolactone
+Dytor Plus,10,tab,torsemide 10 mg + spironolactone 50 mg,spironolactone;torsemide
+Vymada,50,tab,sacubitril 24 mg + valsartan 26 mg,sacubitril;valsartan
+Vymada,100,tab,sacubitril 49 mg + valsartan 51 mg,sacubitril;valsartan
+Vymada,200,tab,sacubitril 97 mg + valsartan 103 mg,sacubitril;valsartan
+Ecosprin-AV,75/10,cap,aspirin 75 mg + atorvastatin 10 mg,aspirin;atorvastatin
+Ecosprin-AV,75/20,cap,aspirin 75 mg + atorvastatin 20 mg,aspirin;atorvastatin
+Ecosprin-AV,150/20,cap,aspirin 150 mg + atorvastatin 20 mg,aspirin;atorvastatin
+Clopilet-A,75,tab,clopidogrel 75 mg + aspirin 75 mg,aspirin;clopidogrel
+Deplatt-A,75,tab,clopidogrel 75 mg + aspirin 75 mg,aspirin;clopidogrel
+Clopitab-A,75,cap,clopidogrel 75 mg + aspirin 75 mg,aspirin;clopidogrel
+Glycomet-GP,1,tab,glimepiride 1 mg + metformin 500 mg,glimepiride;metformin
+Glycomet-GP,2,tab,glimepiride 2 mg + metformin 500 mg,glimepiride;metformin
+Amaryl-M,1,tab,glimepiride 1 mg + metformin 500 mg,glimepiride;metformin
+Amaryl-M,2,tab,glimepiride 2 mg + metformin 500 mg,glimepiride;metformin
+Glimestar-M,1,tab,glimepiride 1 mg + metformin 500 mg,glimepiride;metformin
+Glimestar-M,2,tab,glimepiride 2 mg + metformin 500 mg,glimepiride;metformin
+Gluconorm-G,1,tab,glimepiride 1 mg + metformin 500 mg,glimepiride;metformin
+Gluconorm-G,2,tab,glimepiride 2 mg + metformin 500 mg,glimepiride;metformin
+Glizid-M,,tab,gliclazide 80 mg + metformin 500 mg,gliclazide;metformin
+Janumet,50/500,tab,sitagliptin 50 mg + metformin 500 mg,metformin;sitagliptin
+Janumet,50/1000,tab,sitagliptin 50 mg + metformin 1000 mg,metformin;sitagliptin
+Istamet,50/500,tab,sitagliptin 50 mg + metformin 500 mg,metformin;sitagliptin
+Istamet,50/1000,tab,sitagliptin 50 mg + metformin 1000 mg,metformin;sitagliptin
+Galvus Met,50/500,tab,vildagliptin 50 mg + metformin 500 mg,metformin;vildagliptin
+Galvus Met,50/1000,tab,vildagliptin 50 mg + metformin 1000 mg,metformin;vildagliptin
+Jalra-M,50/500,tab,vildagliptin 50 mg + metformin 500 mg,metformin;vildagliptin
+Jalra-M,50/1000,tab,vildagliptin 50 mg + metformin 1000 mg,metformin;vildagliptin
+Xigduo XR,10/500,tab,dapagliflozin 10 mg + metformin 500 mg,dapagliflozin;metformin
+Xigduo XR,10/1000,tab,dapagliflozin 10 mg + metformin 1000 mg,dapagliflozin;metformin
+Jardiance Met,12.5/500,tab,empagliflozin 12.5 mg + metformin 500 mg,empagliflozin;metformin
+Huminsulin 30/70,,inj,insulin regular 30% + insulin isophane 70%,insulin isophane;insulin regular
+Mixtard 30,,inj,insulin regular 30% + insulin isophane 70%,insulin isophane;insulin regular
+Pan-D,,cap,pantoprazole 40 mg + domperidone 30 mg SR,domperidone;pantoprazole
+Omez-D,,cap,omeprazole 20 mg + domperidone 10 mg,domperidone;omeprazole
+Razo-D,,cap,rabeprazole 20 mg + domperidone 30 mg SR,domperidone;rabeprazole
+Rablet-D,,cap,rabeprazole 20 mg + domperidone 30 mg SR,domperidone;rabeprazole
+Augmentin,625,tab,amoxicillin 500 mg + clavulanic acid 125 mg,amoxicillin;clavulanic acid
+Augmentin,1g,tab,amoxicillin 875 mg + clavulanic acid 125 mg,amoxicillin;clavulanic acid
+Clavam,625,tab,amoxicillin 500 mg + clavulanic acid 125 mg,amoxicillin;clavulanic acid
+Moxikind-CV,625,tab,amoxicillin 500 mg + clavulanic acid 125 mg,amoxicillin;clavulanic acid
+Septran,DS,tab,sulfamethoxazole 800 mg + trimethoprim 160 mg,sulfamethoxazole;trimethoprim
+Septran,,tab,sulfamethoxazole 400 mg + trimethoprim 80 mg,sulfamethoxazole;trimethoprim
+Bactrim,DS,tab,sulfamethoxazole 800 mg + trimethoprim 160 mg,sulfamethoxazole;trimethoprim
+O2,,tab,ofloxacin 200 mg + ornidazole 500 mg,ofloxacin;ornidazole
+Zanocin-OZ,,tab,ofloxacin 200 mg + ornidazole 500 mg,ofloxacin;ornidazole
+Norflox-TZ,,tab,norfloxacin 400 mg + tinidazole 600 mg,norfloxacin;tinidazole
+R-Cinex,,cap,rifampicin 450 mg + isoniazid 300 mg,isoniazid;rifampicin
+Forecox,,tab,rifampicin 150 mg + isoniazid 75 mg + pyrazinamide 400 mg + ethambutol 275 mg,ethambutol;isoniazid;pyrazinamide;rifampicin
+Nexito Plus,,tab,escitalopram 10 mg + clonazepam 0.5 mg,clonazepam;escitalopram
+Gabapin NT,,tab,gabapentin 400 mg + nortriptyline 10 mg,gabapentin;nortriptyline
+Pregeb-M,75,cap,pregabalin 75 mg + methylcobalamin 750 mcg,methylcobalamin;pregabalin
+Syndopa Plus,,tab,levodopa 100 mg + carbidopa 25 mg,carbidopa;levodopa
+Tidomet Plus,,tab,levodopa 100 mg + carbidopa 25 mg,carbidopa;levodopa
+Montair-LC,,tab,montelukast 10 mg + levocetirizine 5 mg,levocetirizine;montelukast
+Montek-LC,,tab,montelukast 10 mg + levocetirizine 5 mg,levocetirizine;montelukast
+Foracort,200,inhaler,budesonide 200 mcg + formoterol 6 mcg,budesonide;formoterol
+Foracort,400,inhaler,budesonide 400 mcg + formoterol 6 mcg,budesonide;formoterol
+Seroflo,125,inhaler,salmeterol 25 mcg + fluticasone 125 mcg,fluticasone;salmeterol
+Seroflo,250,inhaler,salmeterol 25 mcg + fluticasone 250 mcg,fluticasone;salmeterol
+Duolin,,inhaler,levosalbutamol 50 mcg + ipratropium 20 mcg,ipratropium;levosalbutamol
+Theo-Asthalin,,tab,salbutamol 2 mg + theophylline 100 mg,salbutamol;theophylline
+Deriphyllin,,tab,etofylline 77 mg + theophylline 23 mg,etofylline;theophylline
+Ascoril LS,,syrup,levosalbutamol 1 mg/5 mL + ambroxol 30 mg/5 mL + guaifenesin 50 mg/5 mL,ambroxol;guaifenesin;levosalbutamol
+Urimax-D,,cap,tamsulosin 0.4 mg + dutasteride 0.5 mg,dutasteride;tamsulosin
+Veltam Plus,,cap,tamsulosin 0.4 mg + dutasteride 0.5 mg,dutasteride;tamsulosin
+Urimax-F,,cap,tamsulosin 0.4 mg + finasteride 5 mg,finasteride;tamsulosin
+Shelcal,500,tab,calcium carbonate 1250 mg (500 mg elemental Ca) + cholecalciferol 250 IU,calcium carbonate;cholecalciferol
+Orofer XT,,tab,ferrous ascorbate 100 mg elemental Fe + folic acid 1.5 mg,ferrous ascorbate;folic acid
+Livogen,,tab,ferrous fumarate 152 mg + folic acid 1.5 mg,ferrous fumarate;folic acid
+Fefol,,cap,ferrous sulfate 150 mg + folic acid 0.5 mg,ferrous sulfate;folic acid
+Ovral-L,,tab,levonorgestrel 0.15 mg + ethinylestradiol 0.03 mg,ethinylestradiol;levonorgestrel
+Doxinate,,tab,doxylamine 10 mg + pyridoxine 10 mg,doxylamine;pyridoxine
+Gelusil MPS,,tab,aluminium hydroxide 250 mg + magnesium hydroxide 250 mg + magnesium aluminium silicate 50 mg + simethicone 50 mg,aluminium hydroxide;magnesium aluminium silicate;magnesium hydroxide;simethicone

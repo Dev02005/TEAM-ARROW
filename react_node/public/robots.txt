@@ -1,0 +1,15 @@
+# Robots.txt for AushadhSeva — Medication Safety Portal
+User-agent: *
+Allow: /
+Allow: /check
+Allow: /medicines
+Allow: /login
+Allow: /register
+
+# Disallow private patient health records and confidential clinical charts
+Disallow: /api/
+Disallow: /patients/
+Disallow: /print-safety-card/
+Disallow: /my-prescriptions
+
+Sitemap: http://localhost:5000/sitemap.xml

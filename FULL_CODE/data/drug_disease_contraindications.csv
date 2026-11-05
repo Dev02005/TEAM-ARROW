@@ -1,0 +1,153 @@
+condition_id,condition_name,generic_name,severity,reason,recommended_action
+angle_closure_glaucoma,Angle-closure glaucoma,amitriptyline,major,Anticholinergic effect can precipitate acute angle closure,Avoid; choose a non-anticholinergic alternative
+angle_closure_glaucoma,Angle-closure glaucoma,clomipramine,major,Anticholinergic effect can precipitate acute angle closure,Avoid; choose a non-anticholinergic alternative
+angle_closure_glaucoma,Angle-closure glaucoma,hyoscine butylbromide,major,Anticholinergic effect can precipitate acute angle closure,Avoid; choose a non-anticholinergic alternative
+angle_closure_glaucoma,Angle-closure glaucoma,imipramine,major,Anticholinergic effect can precipitate acute angle closure,Avoid; choose a non-anticholinergic alternative
+angle_closure_glaucoma,Angle-closure glaucoma,oxybutynin,contraindicated,Antimuscarinics can precipitate acute angle closure,Stop; consider mirabegron for bladder symptoms
+angle_closure_glaucoma,Angle-closure glaucoma,solifenacin,contraindicated,Antimuscarinics can precipitate acute angle closure,Stop; consider mirabegron for bladder symptoms
+angle_closure_glaucoma,Angle-closure glaucoma,tolterodine,contraindicated,Antimuscarinics can precipitate acute angle closure,Stop; consider mirabegron for bladder symptoms
+angle_closure_glaucoma,Angle-closure glaucoma,trihexyphenidyl,contraindicated,Antimuscarinics can precipitate acute angle closure,Stop; review antiparkinson regimen with a specialist
+asthma,Asthma,atenolol,moderate,Cardioselective beta-blockers can still cause bronchospasm at higher doses,Use lowest dose with caution; monitor for wheeze
+asthma,Asthma,bisoprolol,moderate,Cardioselective beta-blockers can still cause bronchospasm at higher doses,Use lowest dose with caution; monitor for wheeze
+asthma,Asthma,carvedilol,contraindicated,Non-selective beta-blockade can cause severe bronchospasm in asthma,"Stop; use a cardioselective beta-blocker only if essential, or another drug class"
+asthma,Asthma,labetalol,contraindicated,Non-selective beta-blockade can cause severe bronchospasm in asthma,"Stop; use a cardioselective beta-blocker only if essential, or another drug class"
+asthma,Asthma,metoprolol,moderate,Cardioselective beta-blockers can still cause bronchospasm at higher doses,Use lowest dose with caution; monitor for wheeze
+asthma,Asthma,nadolol,contraindicated,Non-selective beta-blockade can cause severe bronchospasm in asthma,"Stop; use a cardioselective beta-blocker only if essential, or another drug class"
+asthma,Asthma,nebivolol,moderate,Cardioselective beta-blockers can still cause bronchospasm at higher doses,Use lowest dose with caution; monitor for wheeze
+asthma,Asthma,propranolol,contraindicated,Non-selective beta-blockade can cause severe bronchospasm in asthma,"Stop; use a cardioselective beta-blocker only if essential, or another drug class"
+asthma,Asthma,sotalol,contraindicated,Non-selective beta-blockade can cause severe bronchospasm in asthma,"Stop; use a cardioselective beta-blocker only if essential, or another drug class"
+chronic_liver_disease,Chronic liver disease / cirrhosis,aceclofenac,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,atorvastatin,moderate,Statins are contraindicated in decompensated cirrhosis/acute liver failure,Review statin: avoid if decompensated; monitor LFTs
+chronic_liver_disease,Chronic liver disease / cirrhosis,celecoxib,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,diclofenac,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,etoricoxib,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,fluvastatin,moderate,Statins are contraindicated in decompensated cirrhosis/acute liver failure,Review statin: avoid if decompensated; monitor LFTs
+chronic_liver_disease,Chronic liver disease / cirrhosis,ibuprofen,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,indomethacin,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,ketoconazole,contraindicated,Oral ketoconazole is contraindicated in liver disease (hepatotoxicity),Stop oral ketoconazole; use an alternative antifungal
+chronic_liver_disease,Chronic liver disease / cirrhosis,ketorolac,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,leflunomide,contraindicated,Leflunomide is hepatotoxic; contraindicated in hepatic impairment (EU SmPC),Avoid leflunomide; rheumatology review
+chronic_liver_disease,Chronic liver disease / cirrhosis,lornoxicam,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,mefenamic acid,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,meloxicam,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,methotrexate,contraindicated,Methotrexate is hepatotoxic; contraindicated in chronic liver disease,Stop methotrexate; rheumatology review
+chronic_liver_disease,Chronic liver disease / cirrhosis,naproxen,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,nimesulide,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,paracetamol,moderate,Reduced hepatic reserve,Limit paracetamol to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,piroxicam,major,"NSAIDs in cirrhosis precipitate renal failure, ascites and variceal/GI bleeding",Avoid NSAIDs in cirrhosis; paracetamol up to 2 g/day
+chronic_liver_disease,Chronic liver disease / cirrhosis,pitavastatin,moderate,Statins are contraindicated in decompensated cirrhosis/acute liver failure,Review statin: avoid if decompensated; monitor LFTs
+chronic_liver_disease,Chronic liver disease / cirrhosis,pravastatin,moderate,Statins are contraindicated in decompensated cirrhosis/acute liver failure,Review statin: avoid if decompensated; monitor LFTs
+chronic_liver_disease,Chronic liver disease / cirrhosis,rosuvastatin,moderate,Statins are contraindicated in decompensated cirrhosis/acute liver failure,Review statin: avoid if decompensated; monitor LFTs
+chronic_liver_disease,Chronic liver disease / cirrhosis,simvastatin,moderate,Statins are contraindicated in decompensated cirrhosis/acute liver failure,Review statin: avoid if decompensated; monitor LFTs
+chronic_liver_disease,Chronic liver disease / cirrhosis,sodium valproate,contraindicated,Valproate is contraindicated in significant hepatic disease (hepatotoxicity),Switch antiepileptic (e.g. levetiracetam) after neurology advice
+dementia,Dementia,alprazolam,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,amisulpride,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,amitriptyline,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,aripiprazole,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,chlordiazepoxide,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,chlorpheniramine,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,chlorpromazine,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,clonazepam,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,clozapine,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,diazepam,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,etizolam,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,haloperidol,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,hydroxyzine,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,imipramine,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,lorazepam,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,nitrazepam,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+dementia,Dementia,olanzapine,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,oxybutynin,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,paliperidone,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,pimozide,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,promethazine,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,quetiapine,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,risperidone,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,trifluoperazine,major,Antipsychotics increase mortality and stroke in elderly patients with dementia (boxed warning),"Use only if severe distress/risk, lowest dose, shortest time, with specialist review"
+dementia,Dementia,trihexyphenidyl,moderate,Strongly anticholinergic drugs worsen cognition in dementia,Deprescribe or switch to a less anticholinergic option
+dementia,Dementia,zolpidem,moderate,Benzodiazepines/Z-drugs worsen cognition and increase falls in dementia,Taper and stop where possible
+epilepsy,Epilepsy / seizure disorder,bupropion,contraindicated,Bupropion is contraindicated in seizure disorders,Stop bupropion
+epilepsy,Epilepsy / seizure disorder,tramadol,major,Tramadol lowers the seizure threshold,Avoid tramadol; choose another analgesic
+g6pd_deficiency,G6PD deficiency,dapsone,major,Oxidant drug - risk of haemolysis in G6PD deficiency,Avoid; choose an alternative
+g6pd_deficiency,G6PD deficiency,nitrofurantoin,major,Oxidant drug - risk of haemolysis in G6PD deficiency,Avoid; choose an alternative
+g6pd_deficiency,G6PD deficiency,primaquine,major,Oxidant drug - risk of haemolysis in G6PD deficiency (contraindicated in severe deficiency),Avoid; choose an alternative
+g6pd_deficiency,G6PD deficiency,sulfamethoxazole,moderate,Sulfonamides may cause haemolysis in G6PD deficiency,Prefer an alternative antibiotic; monitor for haemolysis
+gout,Gout,chlorthalidone,moderate,Thiazide and loop diuretics raise serum urate and can precipitate gout,Review need for diuretic; consider alternative antihypertensive (e.g. losartan)
+gout,Gout,furosemide,moderate,Thiazide and loop diuretics raise serum urate and can precipitate gout,Review need for diuretic; consider alternative antihypertensive (e.g. losartan)
+gout,Gout,hydrochlorothiazide,moderate,Thiazide and loop diuretics raise serum urate and can precipitate gout,Review need for diuretic; consider alternative antihypertensive (e.g. losartan)
+gout,Gout,indapamide,moderate,Thiazide and loop diuretics raise serum urate and can precipitate gout,Review need for diuretic; consider alternative antihypertensive (e.g. losartan)
+gout,Gout,metolazone,moderate,Thiazide and loop diuretics raise serum urate and can precipitate gout,Review need for diuretic; consider alternative antihypertensive (e.g. losartan)
+gout,Gout,pyrazinamide,major,Pyrazinamide raises urate and is contraindicated in acute gout,Specialist (TB) review of regimen
+gout,Gout,torsemide,moderate,Thiazide and loop diuretics raise serum urate and can precipitate gout,Review need for diuretic; consider alternative antihypertensive (e.g. losartan)
+heart_failure,Heart failure,aceclofenac,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,alogliptin,moderate,Increased heart-failure hospitalisation signal,Prefer another DPP-4 inhibitor/antidiabetic in heart failure
+heart_failure,Heart failure,celecoxib,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,cilostazol,contraindicated,Cilostazol (PDE3 inhibitor) is contraindicated in heart failure of any severity,Stop cilostazol
+heart_failure,Heart failure,diclofenac,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,diltiazem,major,Negative inotropic effect worsens heart failure with reduced EF,Avoid non-dihydropyridine CCBs in HFrEF; use a beta-blocker for rate control
+heart_failure,Heart failure,dronedarone,major,Dronedarone increases mortality in severe/recently decompensated heart failure,Avoid dronedarone in heart failure; specialist review
+heart_failure,Heart failure,etoricoxib,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,ibuprofen,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,indomethacin,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,itraconazole,major,Itraconazole has negative inotropic effects (boxed warning in heart failure),Avoid itraconazole; use an alternative antifungal (e.g. terbinafine for onychomycosis)
+heart_failure,Heart failure,ketorolac,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,lornoxicam,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,mefenamic acid,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,meloxicam,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,naproxen,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,nimesulide,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,pioglitazone,major,Pioglitazone causes fluid retention; contraindicated in NYHA III-IV heart failure,Stop pioglitazone; choose another antidiabetic (e.g. SGLT2 inhibitor/DPP-4 inhibitor)
+heart_failure,Heart failure,piroxicam,major,NSAIDs cause sodium/fluid retention and worsen heart failure,Avoid NSAIDs in heart failure; use paracetamol or topical agents
+heart_failure,Heart failure,saxagliptin,moderate,Increased heart-failure hospitalisation signal,Prefer another DPP-4 inhibitor/antidiabetic in heart failure
+heart_failure,Heart failure,verapamil,major,Negative inotropic effect worsens heart failure with reduced EF,Avoid non-dihydropyridine CCBs in HFrEF; use a beta-blocker for rate control
+myasthenia_gravis,Myasthenia gravis,amikacin,major,Aminoglycosides impair neuromuscular transmission,Avoid aminoglycosides in myasthenia gravis
+myasthenia_gravis,Myasthenia gravis,ciprofloxacin,major,Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis (boxed warning),Avoid fluoroquinolones; choose another antibiotic
+myasthenia_gravis,Myasthenia gravis,gentamicin,major,Aminoglycosides impair neuromuscular transmission,Avoid aminoglycosides in myasthenia gravis
+myasthenia_gravis,Myasthenia gravis,levofloxacin,major,Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis (boxed warning),Avoid fluoroquinolones; choose another antibiotic
+myasthenia_gravis,Myasthenia gravis,moxifloxacin,major,Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis (boxed warning),Avoid fluoroquinolones; choose another antibiotic
+myasthenia_gravis,Myasthenia gravis,norfloxacin,major,Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis (boxed warning),Avoid fluoroquinolones; choose another antibiotic
+myasthenia_gravis,Myasthenia gravis,ofloxacin,major,Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis (boxed warning),Avoid fluoroquinolones; choose another antibiotic
+myasthenia_gravis,Myasthenia gravis,streptomycin,major,Aminoglycosides impair neuromuscular transmission,Avoid aminoglycosides in myasthenia gravis
+myasthenia_gravis,Myasthenia gravis,tobramycin,major,Aminoglycosides impair neuromuscular transmission,Avoid aminoglycosides in myasthenia gravis
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,aceclofenac,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,aspirin,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,celecoxib,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,diclofenac,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,etoricoxib,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,ibuprofen,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,indomethacin,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,ketorolac,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,lornoxicam,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,mefenamic acid,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,meloxicam,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,naproxen,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,nimesulide,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,piroxicam,contraindicated,History of asthma/urticaria/angioedema with aspirin or NSAIDs,Stop; use paracetamol
+parkinsons,Parkinson's disease,chlorpromazine,major,Central dopamine antagonism worsens parkinsonism,"Avoid; use domperidone for nausea, quetiapine for psychosis (specialist)"
+parkinsons,Parkinson's disease,flunarizine,major,Flunarizine can cause/worsen parkinsonism (contraindicated in labelling),Stop flunarizine; choose another migraine/vertigo option
+parkinsons,Parkinson's disease,haloperidol,contraindicated,Haloperidol (D2 antagonist) is contraindicated in Parkinson's disease,Stop; if an antipsychotic is essential use quetiapine/clozapine under specialist advice
+parkinsons,Parkinson's disease,levosulpiride,major,Central dopamine antagonism worsens parkinsonism,"Avoid; use domperidone for nausea, quetiapine for psychosis (specialist)"
+parkinsons,Parkinson's disease,metoclopramide,major,Central dopamine antagonism worsens parkinsonism,"Avoid; use domperidone for nausea, quetiapine for psychosis (specialist)"
+parkinsons,Parkinson's disease,prochlorperazine,major,Central dopamine antagonism worsens parkinsonism,"Avoid; use domperidone for nausea, quetiapine for psychosis (specialist)"
+parkinsons,Parkinson's disease,trifluoperazine,major,Central dopamine antagonism worsens parkinsonism,"Avoid; use domperidone for nausea, quetiapine for psychosis (specialist)"
+penicillin_allergy,Penicillin allergy,amoxicillin,contraindicated,Documented penicillin allergy,Stop; use a non-penicillin alternative
+penicillin_allergy,Penicillin allergy,ampicillin,contraindicated,Documented penicillin allergy,Stop; use a non-penicillin alternative
+penicillin_allergy,Penicillin allergy,benzathine penicillin,contraindicated,Documented penicillin allergy,Stop; use a non-penicillin alternative
+penicillin_allergy,Penicillin allergy,cloxacillin,contraindicated,Documented penicillin allergy,Stop; use a non-penicillin alternative
+penicillin_allergy,Penicillin allergy,piperacillin,contraindicated,Documented penicillin allergy,Stop; use a non-penicillin alternative
+peptic_ulcer,Peptic ulcer disease / GI bleed,aceclofenac,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,celecoxib,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,diclofenac,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,etoricoxib,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,ibuprofen,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,indomethacin,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,ketorolac,contraindicated,Ketorolac is contraindicated with active/previous peptic ulcer or GI bleeding,Stop ketorolac
+peptic_ulcer,Peptic ulcer disease / GI bleed,lornoxicam,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,mefenamic acid,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,meloxicam,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,naproxen,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,nimesulide,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+peptic_ulcer,Peptic ulcer disease / GI bleed,piroxicam,major,NSAIDs cause GI ulceration and bleeding,Avoid NSAIDs with peptic ulcer/previous GI bleed; if unavoidable use with a PPI after specialist review
+pregnancy,Pregnancy,acenocoumarol,contraindicated,Coumarin anticoagulants cause embryopathy and fetal bleeding,Switch to low molecular weight heparin under specialist care
+sulfonamide_allergy,Sulfonamide (sulfa) antibiotic allergy,sulfamethoxazole,contraindicated,Documented sulfonamide allergy,Stop; use a non-sulfonamide alternative
+sulfonamide_allergy,Sulfonamide (sulfa) antibiotic allergy,sulfasalazine,contraindicated,Documented sulfonamide allergy,Stop; use a non-sulfonamide alternative

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:5000/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="http://localhost:5000/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="te" href="http://localhost:5000/?lang=te" />
+    <xhtml:link rel="alternate" hreflang="hi" href="http://localhost:5000/?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="ta" href="http://localhost:5000/?lang=ta" />
+    <xhtml:link rel="alternate" hreflang="ml" href="http://localhost:5000/?lang=ml" />
+    <xhtml:link rel="alternate" hreflang="kn" href="http://localhost:5000/?lang=kn" />
+    <xhtml:link rel="alternate" hreflang="or" href="http://localhost:5000/?lang=or" />
+    <xhtml:link rel="alternate" hreflang="ur" href="http://localhost:5000/?lang=ur" />
+  </url>
+  <url>
+    <loc>http://localhost:5000/check</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5000/medicines</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5000/login</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5000/register</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

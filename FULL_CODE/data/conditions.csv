@@ -1,0 +1,59 @@
+condition_id,condition_name,kind,description,example_terms
+hypertension,Hypertension,diagnosis,High blood pressure,HTN; high BP
+type2_diabetes,Type 2 diabetes mellitus,diagnosis,Type 2 diabetes,DM2; T2DM
+dyslipidaemia,Dyslipidaemia,diagnosis,High cholesterol / lipids,dyslipidemia
+ckd,Chronic kidney disease,diagnosis,"CKD (renal rules use the recorded eGFR, not this text)",CKD 3b
+cad,Coronary artery disease,diagnosis,"Ischaemic heart disease, old MI, post-PCI",CAD; post MI
+heart_failure,Heart failure,diagnosis,Heart failure (any type),CHF; HFrEF
+atrial_fibrillation,Atrial fibrillation,diagnosis,AF,AF
+stroke,Stroke / TIA,diagnosis,Prior stroke or TIA,old CVA
+dvt_pe,Venous thromboembolism,diagnosis,DVT / PE,DVT
+mechanical_valve,Mechanical heart valve,diagnosis,Prosthetic mechanical valve on anticoagulation,s/p MVR
+asthma,Asthma,diagnosis,Bronchial asthma,BA
+copd,COPD,diagnosis,Chronic obstructive pulmonary disease,COPD
+peptic_ulcer,Peptic ulcer disease / GI bleed,diagnosis,Peptic ulcer or previous upper GI bleed,PUD; h/o UGI bleed
+gerd,Acid peptic disease / GERD,diagnosis,"Gastritis, dyspepsia, reflux",APD; GERD
+chronic_liver_disease,Chronic liver disease / cirrhosis,diagnosis,Chronic liver disease or cirrhosis,CLD
+hypothyroidism,Hypothyroidism,diagnosis,Hypothyroidism,hypothyroid
+hyperthyroidism,Hyperthyroidism,diagnosis,Hyperthyroidism / Graves,Graves
+osteoarthritis,Osteoarthritis,diagnosis,Degenerative joint disease,OA knee
+low_back_pain,Low back pain / spondylosis,diagnosis,Mechanical back or neck pain,LBP
+rheumatoid_arthritis,Rheumatoid arthritis,diagnosis,Rheumatoid arthritis,RA
+gout,Gout,diagnosis,Gout / hyperuricaemia,gout
+osteoporosis,Osteoporosis,diagnosis,Osteoporosis,osteoporosis
+epilepsy,Epilepsy / seizure disorder,diagnosis,Seizure disorder,seizure disorder
+depression,Depression,diagnosis,Depressive disorder,MDD
+anxiety,Anxiety disorder,diagnosis,Anxiety / panic,GAD
+bipolar,Bipolar disorder,diagnosis,Bipolar affective disorder,BPAD
+schizophrenia,Schizophrenia / psychosis,diagnosis,Psychotic disorder,schizophrenia
+insomnia,Insomnia,diagnosis,Sleep disturbance,insomnia
+parkinsons,Parkinson's disease,diagnosis,Parkinson's disease / parkinsonism,PD
+dementia,Dementia,diagnosis,Dementia of any cause,dementia
+neuropathy,Peripheral neuropathy,diagnosis,Diabetic or other neuropathy,DPN
+migraine,Migraine,diagnosis,Migraine,migraine
+vertigo,Vertigo,diagnosis,Peripheral vertigo,BPPV
+bph,Benign prostatic hyperplasia,diagnosis,BPH / LUTS,BPH
+overactive_bladder,Overactive bladder,diagnosis,Urge incontinence,OAB
+erectile_dysfunction,Erectile dysfunction,diagnosis,ED,ED
+uti,Urinary tract infection,diagnosis,Current UTI,UTI
+respiratory_infection,Respiratory tract infection,diagnosis,Current URTI/LRTI/pneumonia,LRTI
+tuberculosis,Tuberculosis (on treatment),diagnosis,TB on anti-TB therapy,PTB on ATT
+anaemia,Anaemia,diagnosis,Iron/B12/folate deficiency anaemia,IDA
+allergic_rhinitis,Allergic rhinitis / urticaria,diagnosis,Allergic rhinitis or urticaria,AR
+angle_closure_glaucoma,Angle-closure glaucoma,diagnosis,Narrow / angle-closure glaucoma,narrow angle glaucoma
+g6pd_deficiency,G6PD deficiency,diagnosis,Glucose-6-phosphate dehydrogenase deficiency,G6PD def
+myasthenia_gravis,Myasthenia gravis,diagnosis,Myasthenia gravis,MG
+acne,Acne,diagnosis,Acne vulgaris,acne
+pregnancy_related,Pregnancy-related condition,diagnosis,Antenatal / pregnancy-related diagnosis,G2P1 at 20 wks; GDM
+infertility_or_gyn,Gynaecological condition,diagnosis,Menstrual or fertility problem,AUB
+hepatitis_b,Chronic hepatitis B,diagnosis,Chronic HBV infection,CHB
+skin_fungal,Fungal skin/nail infection,diagnosis,Dermatophytosis / onychomycosis,tinea
+ibs_gi_spasm,Abdominal colic / IBS,diagnosis,Functional bowel / colic,IBS
+nausea_vomiting,Nausea / vomiting,diagnosis,Nausea or vomiting,vomiting
+cough_cold,Cough / common cold,diagnosis,Acute cough or cold,cough
+fever,Fever,diagnosis,Acute febrile illness,fever
+headache,Headache,diagnosis,Headache / body ache,headache
+pregnancy,Pregnancy,pregnancy_field,"Taken from the pregnant field (Y), not from diagnoses",pregnant=Y
+penicillin_allergy,Penicillin allergy,allergy,Taken from the allergies field,penicillin; PCN
+sulfonamide_allergy,Sulfonamide (sulfa) antibiotic allergy,allergy,Taken from the allergies field,sulfa
+nsaid_hypersensitivity,Aspirin/NSAID hypersensitivity,allergy,Taken from the allergies field,aspirin allergy; NSAID allergy

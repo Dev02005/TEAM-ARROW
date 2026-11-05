@@ -1,0 +1,43 @@
+# TalentAP 2026 .gitignore for Healthcare Problem H4
+
+# Environment secrets (Rule 3)
+.env
+
+# Large datasets (Rule 2 & Rule 7: pack's data files go in data/, listed in .gitignore)
+/data/
+# Backups
+backup_*/
+*.zip
+*.tar.gz
+*.csv.gz
+
+# Reference datasets in FULL_CODE/data
+!FULL_CODE/data/*.csv
+!FULL_CODE/data/.htaccess
+
+# ML weights / model dumps (if any)
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.h5
+
+# Virtual environments & node modules
+.venv/
+venv/
+node_modules/
+
+# Logs & temp execution output
+*.log
+*.tmp
+score*.json
+submission_train/
+.DS_Store
+Thumbs.db
+
+# Ensure submission files are NEVER ignored
+!submission/
+!submission/H4_predictions.csv
+!submission/H4_resolution.csv
+

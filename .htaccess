@@ -1,0 +1,18 @@
+# Medication Safety — Root .htaccess
+# Transparently routes all web requests to FULL_CODE/ so the web app
+# continues to be served at /medication/ without URL changes.
+# Submission files and project-level artefacts (README, .gitignore, submission/)
+# are never served via the rewrite (they live at the project root on disk only).
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /medication/
+
+    # Do not rewrite requests that are already inside FULL_CODE/
+    RewriteCond %{REQUEST_URI} ^/medication/FULL_CODE/ [NC]
+    RewriteRule ^ - [L]
+
+    # Pass everything else into FULL_CODE/ transparently
+    RewriteRule ^(.*)$ FULL_CODE/$1 [L]
+</IfModule>
+

@@ -1,0 +1,170 @@
+generic_name,egfr_below,severity,recommended_action
+aceclofenac,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+aceclofenac,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+acyclovir,25,moderate,Reduce acyclovir dose / extend interval (e.g. 800 mg every 8-12 h for zoster)
+alendronate,35,moderate,Alendronate not recommended at CrCl < 35
+alfuzosin,30,moderate,Use alfuzosin with caution in severe renal impairment
+allopurinol,60,moderate,Start low (50-100 mg/day) and titrate slowly; monitor for hypersensitivity
+alogliptin,60,moderate,Reduce alogliptin to 12.5 mg once daily
+alogliptin,30,moderate,Reduce alogliptin to 6.25 mg once daily
+aluminium hydroxide,30,minor,Avoid prolonged aluminium-containing antacids (aluminium accumulation)
+amantadine,50,moderate,Reduce amantadine dose / extend interval per CrCl
+amikacin,60,major,Adjust aminoglycoside dose/interval to renal function and levels (nephro-/ototoxic)
+amiloride,30,major,Avoid amiloride in severe renal impairment (hyperkalaemia)
+amoxicillin,30,minor,Avoid 875 mg / extended-release strengths; reduce frequency (250-500 mg every 12 h)
+apixaban,30,moderate,Use with caution; check apixaban dose-reduction criteria (2.5 mg twice daily in AF if criteria met)
+apixaban,15,major,Avoid apixaban at CrCl < 15 / dialysis (not recommended)
+atenolol,35,moderate,Max atenolol 50 mg/day (CrCl 15-35); 25 mg/day if < 15
+bisoprolol,40,minor,Start bisoprolol at 2.5 mg/day and titrate cautiously
+canagliflozin,30,moderate,Do not initiate below eGFR 30 - review indication
+cefalexin,30,minor,Reduce cefalexin frequency (CrCl 15-29: 250 mg every 8-12 h)
+cefepime,60,moderate,Adjust cefepime dose (neurotoxicity risk in renal impairment)
+cefixime,60,minor,Reduce cefixime dose (CrCl 21-60 ~260 mg/day; <=20 ~200 mg/day)
+cefpodoxime,30,minor,Extend cefpodoxime interval to every 24 h
+cefuroxime,30,minor,Extend cefuroxime dosing interval
+celecoxib,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+celecoxib,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+cetirizine,30,minor,Reduce cetirizine to 5 mg once daily
+chlorthalidone,30,moderate,Thiazide-like diuretic ineffective at eGFR < 30 - consider a loop diuretic
+cilostazol,25,major,Avoid cilostazol at CrCl < 25
+ciprofloxacin,30,moderate,Reduce ciprofloxacin dose / extend interval (e.g. 250-500 mg every 18-24 h)
+clarithromycin,30,moderate,Halve the clarithromycin dose
+codeine,30,major,Avoid codeine in severe renal impairment (metabolite accumulation)
+colchicine,30,major,Reduce colchicine (e.g. 0.5 mg alternate days) or avoid; no repeat courses; avoid with CYP3A4/P-gp inhibitors
+dabigatran,50,moderate,Consider dabigatran 110 mg twice daily; monitor renal function
+dabigatran,30,major,Avoid dabigatran at CrCl < 30 (contraindicated in EU labelling; bleeding)
+dapagliflozin,25,moderate,Do not initiate below eGFR 25; little glucose-lowering effect - review indication
+desvenlafaxine,50,moderate,Max desvenlafaxine 50 mg/day (CrCl 30-50); 25 mg/day or 50 mg alternate days if < 30
+diclofenac,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+diclofenac,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+digoxin,50,moderate,"Reduce digoxin dose and monitor serum level, potassium and heart rate"
+domperidone,30,moderate,Reduce domperidone dosing to once or twice daily
+duloxetine,30,major,Avoid duloxetine at CrCl < 30
+edoxaban,50,moderate,Reduce edoxaban to 30 mg once daily
+edoxaban,15,major,Avoid edoxaban at CrCl < 15
+empagliflozin,30,moderate,Not recommended for glycaemic control below eGFR 30 - review indication
+enalapril,30,moderate,Start enalapril at 2.5 mg/day; monitor potassium and creatinine
+enoxaparin,30,major,Reduce enoxaparin (treatment 1 mg/kg once daily; prophylaxis 20-30 mg once daily); monitor bleeding
+entecavir,50,moderate,Adjust entecavir dose per CrCl
+eplerenone,30,major,Avoid eplerenone at CrCl < 30 (hyperkalaemia; contraindicated)
+ethambutol,30,moderate,Give ethambutol three times weekly (renally cleared; optic neuritis risk)
+etoricoxib,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+etoricoxib,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+famciclovir,60,moderate,Reduce famciclovir dose per CrCl
+famotidine,50,minor,Halve famotidine dose or extend interval (CNS effects)
+febuxostat,30,moderate,Limit febuxostat to 40 mg/day (CrCl 15-29)
+fenofibrate,60,moderate,Use the lowest fenofibrate dose and monitor creatinine
+fenofibrate,30,major,Avoid fenofibrate at eGFR < 30
+flecainide,35,moderate,Start flecainide <= 100 mg/day; monitor levels/ECG
+fluconazole,50,moderate,Halve fluconazole dose after the loading dose (CrCl <= 50)
+fondaparinux,30,major,Avoid fondaparinux at CrCl < 30 (contraindicated; bleeding)
+gabapentin,60,moderate,Reduce gabapentin dose (CrCl 30-59: 400-1400 mg/day in 2 doses)
+gabapentin,30,major,Reduce gabapentin substantially (CrCl 15-29: 200-700 mg/day; <15: 100-300 mg/day); watch sedation
+gemfibrozil,30,major,Avoid gemfibrozil in severe renal impairment
+gentamicin,60,major,Adjust aminoglycoside dose/interval to renal function and levels (nephro-/ototoxic)
+glibenclamide,60,major,Avoid glibenclamide in CKD (prolonged hypoglycaemia); prefer gliclazide/DPP-4 inhibitor
+glimepiride,60,moderate,Start at 1 mg/day and titrate cautiously (hypoglycaemia risk in CKD)
+hydrochlorothiazide,30,moderate,Thiazide ineffective at eGFR < 30 - consider a loop diuretic
+hydroxyzine,50,minor,Reduce hydroxyzine dose by 50%
+ibandronate,30,moderate,Oral ibandronate not recommended at CrCl < 30
+ibuprofen,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+ibuprofen,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+indapamide,30,major,Avoid indapamide in severe renal impairment (contraindicated in labelling)
+indomethacin,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+indomethacin,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+ketorolac,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+ketorolac,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+lacosamide,30,moderate,Limit lacosamide to 300 mg/day
+levetiracetam,50,moderate,Reduce levetiracetam (CrCl 30-50: 250-750 mg twice daily; <30: 250-500 mg twice daily)
+levocetirizine,50,minor,Reduce levocetirizine (2.5 mg alternate days at CrCl 30-50; twice weekly at 10-30)
+levofloxacin,50,moderate,Adjust levofloxacin (e.g. full first dose then half dose or every 48 h)
+lisinopril,30,moderate,Start lisinopril at 2.5-5 mg/day; monitor potassium and creatinine
+lithium,60,moderate,Reduce lithium dose; monitor serum lithium and renal function closely
+lithium,30,major,Avoid lithium at eGFR < 30 unless specialist-supervised (toxicity)
+lornoxicam,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+lornoxicam,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+magnesium hydroxide,30,moderate,Avoid regular magnesium-containing antacids/laxatives (hypermagnesaemia)
+mefenamic acid,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+mefenamic acid,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+meloxicam,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+meloxicam,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+memantine,30,moderate,Target memantine 5 mg twice daily (10 mg/day)
+meropenem,50,moderate,Reduce meropenem dose / extend interval (CrCl 26-50: every 12 h)
+metformin,45,moderate,"Do not initiate; if already taking, review and limit to max 1000 mg/day"
+metformin,30,major,Stop metformin (contraindicated at eGFR < 30: lactic acidosis risk)
+methotrexate,60,moderate,Reduce methotrexate dose (~50%) and monitor blood counts/LFT/creatinine
+methotrexate,30,major,Avoid methotrexate at eGFR < 30 (toxicity)
+metoclopramide,60,moderate,Start metoclopramide at ~50% dose (extrapyramidal risk)
+mirabegron,30,minor,Max mirabegron 25 mg/day
+morphine,30,major,Avoid or greatly reduce morphine (active metabolites accumulate); prefer alternative
+nadolol,50,moderate,Extend nadolol dosing interval
+naproxen,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+naproxen,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+nimesulide,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+nimesulide,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+nitrofurantoin,45,moderate,Use only a short course (3-7 days) for uncomplicated lower UTI if benefit outweighs risk
+nitrofurantoin,30,major,Avoid nitrofurantoin at eGFR < 30 (ineffective; neuropathy/toxicity) - choose another antibiotic
+norfloxacin,30,moderate,Give norfloxacin 400 mg once daily
+ofloxacin,50,moderate,Extend ofloxacin dosing interval to every 24 h
+oseltamivir,60,moderate,Reduce oseltamivir (CrCl 30-60: 30 mg twice daily for treatment)
+oxcarbazepine,30,moderate,Start oxcarbazepine at half dose (300 mg/day) and titrate slowly
+paliperidone,80,moderate,Reduce paliperidone (CrCl 50-79: max 6 mg/day; 10-49: max 3 mg/day)
+paroxetine,30,moderate,Start paroxetine at 10 mg/day; max 40 mg/day
+pentoxifylline,30,moderate,Reduce pentoxifylline dose (e.g. 400 mg once daily)
+perindopril,60,moderate,Start perindopril at 2 mg/day; max 8 mg/day
+perindopril,30,major,Perindopril not recommended at CrCl < 30
+pethidine,30,major,Avoid pethidine (norpethidine accumulation causes seizures)
+piperacillin,40,moderate,Reduce piperacillin-tazobactam dose (CrCl 20-40)
+piroxicam,60,moderate,Avoid prolonged use; lowest dose for shortest time; monitor creatinine and potassium
+piroxicam,30,major,Avoid NSAIDs at eGFR < 30 (risk of acute kidney injury); use paracetamol / topical options
+pitavastatin,60,moderate,Start pitavastatin 1 mg; max 2 mg/day
+potassium chloride,30,major,Avoid routine potassium supplements at eGFR < 30; check serum potassium
+pramipexole,50,moderate,Reduce pramipexole dosing frequency (CrCl 30-50 twice daily; 15-30 once daily)
+pravastatin,30,minor,Start pravastatin at 10 mg/day
+pregabalin,60,moderate,Reduce pregabalin dose by ~50% (CrCl 30-60: 75-300 mg/day)
+pregabalin,30,major,Reduce pregabalin substantially (CrCl 15-30: 25-150 mg/day; <15: 25-75 mg/day)
+probenecid,30,moderate,Probenecid is ineffective at eGFR < 30 - use an alternative
+pyrazinamide,30,moderate,Give pyrazinamide three times weekly
+ramipril,40,moderate,Start ramipril at 1.25 mg/day; max 5 mg/day; monitor potassium and creatinine
+ranitidine,50,minor,Reduce ranitidine to 150 mg once daily
+ranolazine,60,moderate,Monitor renal function on ranolazine; stop if acute renal failure
+ranolazine,30,major,Avoid ranolazine at CrCl < 30
+risedronate,30,moderate,Risedronate not recommended at CrCl < 30
+risperidone,30,moderate,Start risperidone 0.5 mg twice daily; titrate slowly
+rivaroxaban,50,moderate,Reduce rivaroxaban to 15 mg once daily (AF)
+rivaroxaban,15,major,Avoid rivaroxaban at CrCl < 15
+rosuvastatin,30,moderate,Start rosuvastatin 5 mg; max 10 mg/day
+sacubitril,30,moderate,Start sacubitril/valsartan at 24/26 mg twice daily; monitor potassium
+saxagliptin,45,moderate,Reduce saxagliptin to 2.5 mg once daily
+sildenafil,30,minor,Start sildenafil at 25 mg
+silodosin,50,moderate,Reduce silodosin to 4 mg/day
+silodosin,30,major,Avoid silodosin at CrCl < 30 (contraindicated)
+simvastatin,30,moderate,Start simvastatin at 5 mg/day and monitor for myopathy
+sitagliptin,45,moderate,Reduce sitagliptin to 50 mg once daily
+sitagliptin,30,moderate,Reduce sitagliptin to 25 mg once daily
+solifenacin,30,minor,Max solifenacin 5 mg/day
+sotalol,60,moderate,Extend sotalol interval to every 24 h; monitor QTc
+sotalol,40,major,Avoid sotalol at CrCl < 40 (AF indication contraindicated; torsades risk)
+spironolactone,50,moderate,Reduce spironolactone (e.g. 25 mg alternate days) and monitor potassium
+spironolactone,30,major,Avoid spironolactone at eGFR < 30 (hyperkalaemia)
+streptomycin,60,major,Adjust aminoglycoside dose/interval to renal function and levels (nephro-/ototoxic)
+sucralfate,30,minor,Use sucralfate cautiously (aluminium accumulation)
+tadalafil,30,moderate,Tadalafil max 5 mg once per 72 h; daily dosing not recommended
+tapentadol,30,major,Avoid tapentadol in severe renal impairment (not recommended)
+tenofovir disoproxil,50,moderate,Extend tenofovir interval (CrCl 30-49: every 48 h)
+terbinafine,50,moderate,Oral terbinafine not recommended at CrCl <= 50
+tetracycline,50,moderate,"Avoid tetracycline in renal impairment (anti-anabolic, worsens uraemia); use doxycycline"
+tizanidine,25,moderate,Reduce tizanidine doses (CrCl < 25)
+tobramycin,60,major,Adjust aminoglycoside dose/interval to renal function and levels (nephro-/ototoxic)
+tolterodine,30,minor,Reduce tolterodine to 1 mg twice daily
+topiramate,70,moderate,Use 50% of the usual topiramate dose
+tramadol,30,moderate,Increase tramadol interval to every 12 h; max 200 mg/day
+trandolapril,30,moderate,Start trandolapril at 0.5 mg/day
+trimetazidine,60,moderate,Reduce trimetazidine to 35 mg once daily
+trimetazidine,30,major,Avoid trimetazidine at CrCl < 30 (contraindicated)
+trimethoprim,30,moderate,Halve the dose of trimethoprim / co-trimoxazole (CrCl 15-30)
+trimethoprim,15,major,Avoid trimethoprim / co-trimoxazole at CrCl < 15
+valacyclovir,50,moderate,Reduce valacyclovir dose / extend interval per CrCl
+vancomycin,60,moderate,Dose vancomycin by levels; extend interval
+venlafaxine,30,moderate,Reduce total venlafaxine dose by >= 50%
+vildagliptin,50,moderate,Reduce vildagliptin to 50 mg once daily
