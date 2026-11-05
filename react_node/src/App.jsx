@@ -145,7 +145,7 @@ export default function App() {
         {renderPage()}
       </main>
 
-      {!isPrintView && <Footer />}
+      {!isPrintView && <Footer navigate={navigate} />}
       {!isPrintView && <BottomNav currentPath={currentPath} navigate={navigate} />}
 
       {/* First visit trilingual modal */}

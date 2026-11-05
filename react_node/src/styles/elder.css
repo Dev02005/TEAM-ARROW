@@ -541,9 +541,33 @@ body:is(.lang-te, .lang-hi, .lang-ta, .lang-ml, .lang-kn, .lang-or, .lang-ur) .e
   }
   body.ez-sheet-open .ez-bottom-nav { display: none; }
 
-  /* Footer: small, out of the way */
-  .app-footer { font-size: 14px; padding-bottom: 12px; }
-  .footer-container { flex-direction: column; gap: 10px; }
+  /* Footer: properly cleared above the fixed bottom navigation bar */
+  .app-footer {
+    padding: 24px 16px calc(var(--ez-bottom-nav-h, 72px) + env(safe-area-inset-bottom, 0px) + 24px) !important;
+    font-size: 13.5px;
+  }
+  .footer-top-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+  .footer-brand-title {
+    justify-content: center;
+  }
+  .footer-nav-col {
+    justify-content: center;
+    gap: 12px;
+  }
+  .footer-disclaimer-box {
+    text-align: left;
+    padding: 10px 14px;
+  }
+  .footer-bottom-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
 
   /* Page blocks */
   .ez-page-title { font-size: 25px; }
