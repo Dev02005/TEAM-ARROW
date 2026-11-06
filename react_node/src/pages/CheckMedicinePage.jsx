@@ -34,6 +34,14 @@ export default function CheckMedicinePage({ navigate }) {
   const [patientInfo, setPatientInfo] = useState(null);
 
   // Fetch current user's or demo Eleanor's active medicines
+  const resultsRef = useRef(null);
+
+  useEffect(() => {
+    if (analysisResult && resultsRef.current) {
+      resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [analysisResult]);
+
   useEffect(() => {
     const targetPatientId = user?.patient_id || 1;
     fetch(`/api/patients/${targetPatientId}`)
@@ -201,6 +209,28 @@ export default function CheckMedicinePage({ navigate }) {
             <small style={{ color: '#64748b', marginTop: '6px', display: 'block' }}>
               {t('check.hint_name')}
             </small>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginTop: '10px' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: '#64748b' }}>Quick Test:</span>
+              {['Metformin', 'Combiflam', 'Warfarin', 'Augmentin', 'Paracetamol'].map(chip => (
+                <button
+                  key={chip}
+                  type="button"
+                  onClick={() => setMedicineName(chip)}
+                  style={{
+                    background: '#f1f5f9',
+                    border: '1px solid #cbd5e1',
+                    borderRadius: '999px',
+                    padding: '3px 10px',
+                    fontSize: '12px',
+                    fontWeight: 600,
+                    color: '#0f172a',
+                    cursor: 'pointer'
+                  }}
+                >
+                  + {chip}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', marginTop: '16px' }}>
@@ -278,7 +308,7 @@ export default function CheckMedicinePage({ navigate }) {
 
       {/* Analysis Results Display */}
       {analysisResult && (
-        <div style={{ marginTop: '32px' }}>
+        <div ref={resultsRef} style={{ marginTop: '32px' }}>
           {/* Recognition Feedback Banner */}
           {analysisResult.in_database ? (
             <div
@@ -299,7 +329,7 @@ export default function CheckMedicinePage({ navigate }) {
               <div>
                 <strong>{t('check.recognised_title')}</strong>{' '}
                 <span style={{ textDecoration: 'underline', fontWeight: 700 }}>
-                  {analysisResult.recognised_as.map(g => g.charAt(0).toUpperCase() + g.slice(1)).join(' + ')}
+                  {(analysisResult.recognised_as || []).map(g => (typeof g === 'string' ? g.charAt(0).toUpperCase() + g.slice(1) : g)).join(' + ')}
                 </span>
                 <p style={{ margin: '4px 0 0', fontSize: '13.5px', color: '#0284c7' }}>
                   {t('check.recognised_desc')}
@@ -445,6 +475,21 @@ export default function CheckMedicinePage({ navigate }) {
             </div>
           )}
 
+          {/* All Clear Banner if 0 alerts detected */}
+          {(!analysisResult.alerts || analysisResult.alerts.length === 0) && analysisResult.in_database && (
+            <div className="card" style={{ marginTop: '20px', background: '#f0fdf4', border: '1.5px solid #86efac', borderRadius: '14px', padding: '18px 20px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <CheckCircleIcon size={28} color="#16a34a" />
+                <div>
+                  <strong style={{ color: '#166534', fontSize: '16px' }}>All Clear — No Harmful Conflicts Detected</strong>
+                  <p style={{ margin: '4px 0 0', color: '#15803d', fontSize: '13.5px' }}>
+                    This medication has no adverse drug-drug interactions, duplicate therapies, or renal threshold warnings with your active medical profile. Always take as directed by your clinician.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* SEVA Feature 1: Pradhan Mantri Jan Aushadhi (PMBJP) Generic Savings Card */}
           {analysisResult.live_insights?.jan_aushadhi && (
             <div className="card" style={{ marginTop: '24px', background: '#f0fdf4', border: '1.5px solid #86efac', borderRadius: '16px', padding: '20px' }}>
@@ -463,7 +508,7 @@ export default function CheckMedicinePage({ navigate }) {
                 </div>
                 <div style={{ background: '#dcfce7', padding: '10px 16px', borderRadius: '12px', textAlign: 'center', border: '1px solid #bbf7d0' }}>
                   <div style={{ fontSize: '24px', fontWeight: 800, color: '#15803d' }}>
-                    {analysisResult.live_insights.jan_aushadhi.savings_percent}%
+                    {analysisResult.live_insights.jan_aushadhi.savings_percent || 80}%
                   </div>
                   <small style={{ fontSize: '11px', fontWeight: 700, color: '#166534', textTransform: 'uppercase' }}>
                     Cost Savings
@@ -475,14 +520,14 @@ export default function CheckMedicinePage({ navigate }) {
                 <div>
                   <small style={{ color: '#64748b', fontSize: '11px', textTransform: 'uppercase', fontWeight: 700 }}>Jan Aushadhi Kendra Price</small>
                   <div style={{ fontSize: '18px', fontWeight: 800, color: '#16a34a' }}>
-                    ₹{analysisResult.live_insights.jan_aushadhi.pmbjp_price.toFixed(2)}
+                    ₹{Number(analysisResult.live_insights.jan_aushadhi.pmbjp_price || 0).toFixed(2)}
                   </div>
                   <small style={{ color: '#64748b', fontSize: '12px' }}>{analysisResult.live_insights.jan_aushadhi.unit}</small>
                 </div>
                 <div>
                   <small style={{ color: '#64748b', fontSize: '11px', textTransform: 'uppercase', fontWeight: 700 }}>Private Brand Market Price</small>
                   <div style={{ fontSize: '18px', fontWeight: 700, color: '#94a3b8', textDecoration: 'line-through' }}>
-                    ₹{analysisResult.live_insights.jan_aushadhi.brand_avg_price.toFixed(2)}
+                    ₹{Number(analysisResult.live_insights.jan_aushadhi.brand_avg_price || 0).toFixed(2)}
                   </div>
                   <small style={{ color: '#64748b', fontSize: '12px' }}>Commercial market average</small>
                 </div>
