@@ -149,7 +149,7 @@ export default function Header({ currentPath, navigate }) {
               </button>
               {langMenuOpen && (
                 <div
-                  className="lang-dropdown-menu"
+                  className="lang-dropdown-menu autocomplete-dropdown"
                   style={{
                     display: 'block',
                     position: 'absolute',
@@ -158,7 +158,7 @@ export default function Header({ currentPath, navigate }) {
                     background: '#ffffff',
                     border: '1px solid #cbd5e1',
                     borderRadius: '12px',
-                    boxShadow: '0 10px 25px -5px rgba(0,0,0,0.15)',
+                    boxShadow: 'var(--shadow-popover)',
                     minWidth: '190px',
                     zIndex: 3000,
                     padding: '6px 0',

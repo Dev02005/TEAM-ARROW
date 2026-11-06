@@ -197,23 +197,37 @@ export default function MedicinesPage({ navigate }) {
         )}
       </div>
 
-      {/* Live Medical Monograph & Jan Aushadhi Modal */}
+      {/* Live Medical Monograph & Jan Aushadhi Modal (Spring Animated) */}
       {selectedMed && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'rgba(15, 23, 42, 0.65)',
-          backdropFilter: 'blur(3px)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          zIndex: 4000,
-          padding: '16px'
-        }}>
-          <div className="card" style={{ maxWidth: 'min(94vw, 580px)', width: '100%', maxHeight: '90vh', overflowY: 'auto', borderRadius: '18px', padding: 'clamp(18px, 4vw, 26px)', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.2)' }}>
+        <div
+          className="modal-backdrop-spring"
+          onClick={(e) => { if (e.target === e.currentTarget) setSelectedMed(null); }}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(15, 23, 42, 0.65)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 4000,
+            padding: '16px'
+          }}
+        >
+          <div
+            className="card modal-dialog-spring"
+            style={{
+              maxWidth: 'min(94vw, 580px)',
+              width: '100%',
+              maxHeight: '90vh',
+              overflowY: 'auto',
+              borderRadius: '18px',
+              padding: 'clamp(18px, 4vw, 26px)',
+              boxShadow: 'var(--shadow-popover)'
+            }}
+          >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', borderBottom: '1px solid #e2e8f0', paddingBottom: '12px', marginBottom: '16px' }}>
               <div>
                 <span className="badge badge-info" style={{ fontSize: '11px', textTransform: 'uppercase' }}>
@@ -225,8 +239,9 @@ export default function MedicinesPage({ navigate }) {
               </div>
               <button
                 type="button"
+                className="modal-close-btn"
                 onClick={() => setSelectedMed(null)}
-                style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: '#64748b' }}
+                aria-label="Close modal"
               >
                 &times;
               </button>

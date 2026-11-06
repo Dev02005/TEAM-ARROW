@@ -155,7 +155,12 @@ export default function HomePage({ navigate }) {
           })}
         </div>
 
-        <div id="quickCheckResult" className={`ez-result ez-result--${current.level}`} aria-live="polite">
+        <div
+          id="quickCheckResult"
+          key={activePreset}
+          className={`ez-result ez-result--${current.level} animate-spring-in`}
+          aria-live="polite"
+        >
           <div className="ez-result__head">
             <div>
               <span id="qcSeverityBadge" className="ez-level-tag" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>

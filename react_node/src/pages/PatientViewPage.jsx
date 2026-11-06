@@ -346,25 +346,47 @@ export default function PatientViewPage({ patientId, navigate }) {
         )}
       </div>
 
-      {/* Modal to Prescribe Medication */}
+      {/* Modal to Prescribe Medication (Spring Animated) */}
       {showAddModal && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'rgba(0,0,0,0.5)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          zIndex: 4000,
-          padding: '16px'
-        }}>
-          <div className="card" style={{ maxWidth: 'min(94vw, 540px)', width: '100%', maxHeight: '90vh', overflowY: 'auto', borderRadius: '16px', padding: 'clamp(16px, 4vw, 24px)' }}>
+        <div
+          className="modal-backdrop-spring"
+          onClick={(e) => { if (e.target === e.currentTarget) setShowAddModal(false); }}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(15, 23, 42, 0.65)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 4000,
+            padding: '16px'
+          }}
+        >
+          <div
+            className="card modal-dialog-spring"
+            style={{
+              maxWidth: 'min(94vw, 540px)',
+              width: '100%',
+              maxHeight: '90vh',
+              overflowY: 'auto',
+              borderRadius: '16px',
+              padding: 'clamp(16px, 4vw, 24px)',
+              boxShadow: 'var(--shadow-popover)'
+            }}
+          >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
               <h3 style={{ margin: 0, fontSize: '18px', fontWeight: 800 }}>Prescribe New Medication</h3>
-              <button type="button" onClick={() => setShowAddModal(false)} style={{ background: 'none', border: 'none', fontSize: '22px', cursor: 'pointer', color: '#64748b' }}>×</button>
+              <button
+                type="button"
+                className="modal-close-btn"
+                onClick={() => setShowAddModal(false)}
+                aria-label="Close modal"
+              >
+                &times;
+              </button>
             </div>
             <form onSubmit={handleAddMedication}>
               <div className="form-group">
