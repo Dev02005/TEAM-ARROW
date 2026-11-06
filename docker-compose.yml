@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  aushadhseva:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aushadhseva:latest
+    container_name: aushadhseva-app
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - DATA_DIR=/app/FULL_CODE/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

@@ -13,8 +13,8 @@ const { SafetyEngineH4 } = require('./pipeline/SafetyEngineH4');
 const { getEgfrStage, calculateSafetyScore, formatAlerts } = require('./helpers/clinical');
 const { getLiveDrugInsights } = require('./services/medicalApi');
 
-const DATA_DIR = path.resolve(__dirname, '../../FULL_CODE/data');
-const LOCALES_DIR = path.resolve(__dirname, '../locales');
+const DATA_DIR = process.env.DATA_DIR || path.resolve(__dirname, '../../FULL_CODE/data');
+const LOCALES_DIR = process.env.LOCALES_DIR || path.resolve(__dirname, '../locales');
 
 // Initialize database and clinical decision support engine
 initDatabase(DATA_DIR);

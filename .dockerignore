@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Dependencies (will be reinstalled cleanly in container)
+node_modules
+react_node/node_modules
+
+# Logs and environment
+*.log
+*.tmp
+.env
+.env.local
+
+# Presentations & binary artifacts
+*.pptx
+*.pdf
+.user_uploaded
+submission/
+
+# OS specific
+.DS_Store
+Thumbs.db
