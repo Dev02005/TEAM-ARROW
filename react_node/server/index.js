@@ -328,6 +328,78 @@ app.get('/api/medicines', (req, res) => {
     res.json({ medicines, total, page: pageNum, limit: limitNum });
 });
 
+app.get('/api/medicines/suggestions', (req, res) => {
+    const q = (req.query.q || '').trim();
+    if (!q || q.length < 1) {
+        return res.json({ suggestions: [] });
+    }
+    const term = `%${q}%`;
+    const results = [];
+    const seen = new Set();
+
+    try {
+        // 1. Search generic medicines and their common brands
+        const genStmt = getStatement(`
+            SELECT generic_name, drug_class, common_brands 
+            FROM medicines 
+            WHERE generic_name LIKE ? OR common_brands LIKE ?
+            LIMIT 15
+        `);
+        const gens = genStmt.all(term, term);
+        for (const g of gens) {
+            const name = g.generic_name.charAt(0).toUpperCase() + g.generic_name.slice(1);
+            if (!seen.has(name.toLowerCase())) {
+                seen.add(name.toLowerCase());
+                results.push({
+                    name,
+                    generic: g.generic_name,
+                    category: g.drug_class || 'Prescription Medicine',
+                    isCombo: false
+                });
+            }
+            if (g.common_brands) {
+                const bList = g.common_brands.split(';').map(b => b.trim()).filter(Boolean);
+                for (const b of bList) {
+                    if (b.toLowerCase().includes(q.toLowerCase()) && !seen.has(b.toLowerCase())) {
+                        seen.add(b.toLowerCase());
+                        results.push({
+                            name: b,
+                            generic: g.generic_name,
+                            category: g.drug_class ? `${g.drug_class} (Brand)` : 'Brand Formulation',
+                            isCombo: false
+                        });
+                    }
+                }
+            }
+        }
+
+        // 2. Search combination brands (FDC)
+        const comboStmt = getStatement(`
+            SELECT brand_name, generic_components, strength_label 
+            FROM combination_brands 
+            WHERE brand_name LIKE ? OR generic_components LIKE ?
+            LIMIT 15
+        `);
+        const combos = comboStmt.all(term, term);
+        for (const c of combos) {
+            const bName = c.brand_name.charAt(0).toUpperCase() + c.brand_name.slice(1);
+            if (!seen.has(bName.toLowerCase())) {
+                seen.add(bName.toLowerCase());
+                results.push({
+                    name: bName,
+                    generic: c.generic_components.split(';').map(s => s.trim()).join(' + '),
+                    category: 'Combination FDC Tablet',
+                    isCombo: true
+                });
+            }
+        }
+    } catch (err) {
+        console.error('Error in /api/medicines/suggestions:', err);
+    }
+
+    res.json({ suggestions: results.slice(0, 15) });
+});
+
 // ============================================================================
 // 5. Check Medicine / Attach Prescription API
 // ============================================================================

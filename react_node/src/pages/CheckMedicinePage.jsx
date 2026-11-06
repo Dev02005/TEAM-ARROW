@@ -33,6 +33,54 @@ export default function CheckMedicinePage({ navigate }) {
   const [activeMeds, setActiveMeds] = useState([]);
   const [patientInfo, setPatientInfo] = useState(null);
 
+  // Autocomplete suggestions state
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [activeCategory, setActiveCategory] = useState('All');
+  const searchInputRef = useRef(null);
+  const suggestionsBoxRef = useRef(null);
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (suggestionsBoxRef.current && !suggestionsBoxRef.current.contains(e.target) &&
+          searchInputRef.current && !searchInputRef.current.contains(e.target)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Fetch live autocomplete suggestions
+  useEffect(() => {
+    const q = medicineName.trim();
+    if (q.length < 1) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      fetch(`/api/medicines/suggestions?q=${encodeURIComponent(q)}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.suggestions && data.suggestions.length > 0) {
+            setSuggestions(data.suggestions);
+            setShowSuggestions(true);
+          } else {
+            setSuggestions([]);
+            setShowSuggestions(false);
+          }
+        })
+        .catch(() => {
+          setSuggestions([]);
+        });
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [medicineName]);
+
   // Fetch current user's or demo Eleanor's active medicines
   const resultsRef = useRef(null);
 
@@ -177,15 +225,18 @@ export default function CheckMedicinePage({ navigate }) {
             <label className="form-label" style={{ fontSize: '16px', fontWeight: 700 }}>
               {t('check.field_name')} <span style={{ color: '#ef4444' }}>*</span>
             </label>
-            <div className="medicine-input-row">
+            <div className="medicine-input-row" style={{ position: 'relative' }}>
               <input
+                ref={searchInputRef}
                 type="text"
                 className="form-control"
                 style={{ flex: '1 1 auto', fontSize: '16px', minHeight: '46px' }}
                 placeholder={t('check.name_placeholder')}
                 value={medicineName}
                 onChange={(e) => setMedicineName(e.target.value)}
+                onFocus={() => { if (suggestions.length > 0) setShowSuggestions(true); }}
                 required
+                autoComplete="off"
               />
               <button
                 type="button"
@@ -205,31 +256,160 @@ export default function CheckMedicinePage({ navigate }) {
                 accept="image/*"
                 onChange={handleFileUpload}
               />
+
+              {/* Live Autocomplete Suggestions Dropdown for ALL 496+ Medicines */}
+              {showSuggestions && suggestions.length > 0 && (
+                <div
+                  ref={suggestionsBoxRef}
+                  style={{
+                    position: 'absolute',
+                    top: '100%',
+                    left: 0,
+                    right: 0,
+                    zIndex: 1000,
+                    marginTop: '4px',
+                    background: '#ffffff',
+                    border: '1.5px solid #0284c7',
+                    borderRadius: '12px',
+                    boxShadow: '0 12px 28px -4px rgba(0, 0, 0, 0.18)',
+                    maxHeight: '280px',
+                    overflowY: 'auto'
+                  }}
+                >
+                  <div style={{ padding: '8px 12px', background: '#f0f9ff', borderBottom: '1px solid #e0f2fe', fontSize: '11px', fontWeight: 700, color: '#0369a1', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                    Matching Medicines from Hospital Formulary ({suggestions.length})
+                  </div>
+                  {suggestions.map((item, idx) => (
+                    <div
+                      key={idx}
+                      onClick={() => {
+                        setMedicineName(item.name);
+                        setShowSuggestions(false);
+                        if (item.category) setIndication(item.category);
+                      }}
+                      style={{
+                        padding: '10px 14px',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        borderBottom: idx === suggestions.length - 1 ? 'none' : '1px solid #f1f5f9',
+                        transition: 'background 0.15s ease'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = '#f8fafc'}
+                      onMouseLeave={(e) => e.currentTarget.style.background = '#ffffff'}
+                    >
+                      <div>
+                        <strong style={{ color: '#0f172a', fontSize: '14.5px' }}>{item.name}</strong>
+                        {item.generic && item.generic.toLowerCase() !== item.name.toLowerCase() && (
+                          <span style={{ marginLeft: '8px', fontSize: '12px', color: '#64748b' }}>
+                            ({item.generic})
+                          </span>
+                        )}
+                      </div>
+                      <span className={`badge ${item.isCombo ? 'badge-warning' : 'badge-neutral'}`} style={{ fontSize: '11px' }}>
+                        {item.category}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
             <small style={{ color: '#64748b', marginTop: '6px', display: 'block' }}>
               {t('check.hint_name')}
             </small>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginTop: '10px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: '#64748b' }}>Quick Test:</span>
-              {['Metformin', 'Combiflam', 'Warfarin', 'Augmentin', 'Paracetamol'].map(chip => (
-                <button
-                  key={chip}
-                  type="button"
-                  onClick={() => setMedicineName(chip)}
-                  style={{
-                    background: '#f1f5f9',
-                    border: '1px solid #cbd5e1',
-                    borderRadius: '999px',
-                    padding: '3px 10px',
-                    fontSize: '12px',
-                    fontWeight: 600,
-                    color: '#0f172a',
-                    cursor: 'pointer'
-                  }}
-                >
-                  + {chip}
-                </button>
-              ))}
+
+            {/* Categorized Comprehensive Tablet Picker */}
+            <div style={{ marginTop: '14px', background: '#f8fafc', padding: '14px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
+                <span style={{ fontSize: '12px', fontWeight: 700, color: '#0f172a', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  Select or Suggest Tablets by Category:
+                </span>
+                <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
+                  {['All', 'Pain & Fever', 'Diabetes', 'Heart & BP', 'Antibiotics', 'Digestion', 'Vitamins'].map(cat => (
+                    <button
+                      key={cat}
+                      type="button"
+                      onClick={() => setActiveCategory(cat)}
+                      style={{
+                        padding: '3px 8px',
+                        fontSize: '11px',
+                        fontWeight: 700,
+                        borderRadius: '6px',
+                        border: '1px solid',
+                        borderColor: activeCategory === cat ? '#0284c7' : '#cbd5e1',
+                        background: activeCategory === cat ? '#0284c7' : '#ffffff',
+                        color: activeCategory === cat ? '#ffffff' : '#475569',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      {cat}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', maxHeight: '120px', overflowY: 'auto' }}>
+                {[
+                  { name: 'Metformin 500mg', cat: 'Diabetes', badge: 'Renal Check' },
+                  { name: 'Glycomet-GP 1', cat: 'Diabetes', badge: 'Combo FDC' },
+                  { name: 'Janumet 50/500', cat: 'Diabetes', badge: 'Sitagliptin + Met' },
+                  { name: 'Jardiance 10mg', cat: 'Diabetes', badge: 'Empagliflozin' },
+                  { name: 'Forxiga 10mg', cat: 'Diabetes', badge: 'Dapagliflozin' },
+                  { name: 'Combiflam', cat: 'Pain & Fever', badge: 'Ibuprofen + PCM' },
+                  { name: 'Dolo 650', cat: 'Pain & Fever', badge: 'Paracetamol' },
+                  { name: 'Zerodol-SP', cat: 'Pain & Fever', badge: 'Aceclo + PCM' },
+                  { name: 'Meftal-Spas', cat: 'Pain & Fever', badge: 'Dicyclo + Mef' },
+                  { name: 'Crocin 650', cat: 'Pain & Fever', badge: 'Paracetamol' },
+                  { name: 'Telma-AM', cat: 'Heart & BP', badge: 'Telmi + Amlo' },
+                  { name: 'Warfarin 5mg', cat: 'Heart & BP', badge: 'Anticoagulant' },
+                  { name: 'Ecosprin 75', cat: 'Heart & BP', badge: 'Aspirin' },
+                  { name: 'Atorva 20mg', cat: 'Heart & BP', badge: 'Atorvastatin' },
+                  { name: 'Amlong 5mg', cat: 'Heart & BP', badge: 'Amlodipine' },
+                  { name: 'Cardace 5mg', cat: 'Heart & BP', badge: 'Ramipril' },
+                  { name: 'Augmentin 625', cat: 'Antibiotics', badge: 'Amox + Clav' },
+                  { name: 'Azithral 500', cat: 'Antibiotics', badge: 'Azithromycin' },
+                  { name: 'Ciplox 500', cat: 'Antibiotics', badge: 'Ciprofloxacin' },
+                  { name: 'Zifi 200', cat: 'Antibiotics', badge: 'Cefixime' },
+                  { name: 'Pan-40', cat: 'Digestion', badge: 'Pantoprazole' },
+                  { name: 'Pan-D', cat: 'Digestion', badge: 'Domperidone + Panto' },
+                  { name: 'Omez 20', cat: 'Digestion', badge: 'Omeprazole' },
+                  { name: 'Rantac 150', cat: 'Digestion', badge: 'Ranitidine' },
+                  { name: 'Shelcal 500', cat: 'Vitamins', badge: 'Calcium + D3' },
+                  { name: 'Becosules', cat: 'Vitamins', badge: 'B-Complex' },
+                  { name: 'Neurobion', cat: 'Vitamins', badge: 'B12 + B6' },
+                  { name: 'Thyronorm 50', cat: 'Vitamins', badge: 'Levothyroxine' },
+                  { name: 'Livogen', cat: 'Vitamins', badge: 'Iron + Folic' },
+                  { name: 'Montek-LC', cat: 'Pain & Fever', badge: 'Montelukast + Levo' },
+                  { name: 'Cetirizine 10mg', cat: 'Pain & Fever', badge: 'Antihistamine' }
+                ]
+                  .filter(item => activeCategory === 'All' || item.cat === activeCategory)
+                  .map(chip => (
+                    <button
+                      key={chip.name}
+                      type="button"
+                      onClick={() => setMedicineName(chip.name)}
+                      style={{
+                        background: '#ffffff',
+                        border: '1px solid #cbd5e1',
+                        borderRadius: '999px',
+                        padding: '4px 10px',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                        color: '#0f172a',
+                        cursor: 'pointer',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px'
+                      }}
+                    >
+                      <span>+ {chip.name}</span>
+                      <small style={{ fontSize: '10px', color: '#64748b', background: '#f1f5f9', padding: '1px 6px', borderRadius: '4px' }}>
+                        {chip.badge}
+                      </small>
+                    </button>
+                  ))}
+              </div>
             </div>
           </div>
 
