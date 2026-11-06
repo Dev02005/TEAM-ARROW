@@ -3,7 +3,7 @@
 # SEVA First Innovation Challenge 2026 | Healthcare Problem H4
 # ==============================================================================
 
-FROM node:20-alpine
+FROM node:22-alpine
 
 # Install curl/wget for health checks
 RUN apk add --no-cache curl
