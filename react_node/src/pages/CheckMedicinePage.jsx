@@ -261,17 +261,18 @@ export default function CheckMedicinePage({ navigate }) {
               {showSuggestions && suggestions.length > 0 && (
                 <div
                   ref={suggestionsBoxRef}
+                  className="autocomplete-dropdown"
                   style={{
                     position: 'absolute',
                     top: '100%',
                     left: 0,
                     right: 0,
                     zIndex: 1000,
-                    marginTop: '4px',
+                    marginTop: '6px',
                     background: '#ffffff',
                     border: '1.5px solid #0284c7',
                     borderRadius: '12px',
-                    boxShadow: '0 12px 28px -4px rgba(0, 0, 0, 0.18)',
+                    boxShadow: 'var(--shadow-popover)',
                     maxHeight: '280px',
                     overflowY: 'auto'
                   }}
@@ -330,6 +331,7 @@ export default function CheckMedicinePage({ navigate }) {
                     <button
                       key={cat}
                       type="button"
+                      className={`filter-tab-pill ${activeCategory === cat ? 'active' : ''}`}
                       onClick={() => setActiveCategory(cat)}
                       style={{
                         padding: '3px 8px',
@@ -388,6 +390,7 @@ export default function CheckMedicinePage({ navigate }) {
                     <button
                       key={chip.name}
                       type="button"
+                      className="choice-chip"
                       onClick={() => setMedicineName(chip.name)}
                       style={{
                         background: '#ffffff',
@@ -488,7 +491,7 @@ export default function CheckMedicinePage({ navigate }) {
 
       {/* Analysis Results Display */}
       {analysisResult && (
-        <div ref={resultsRef} style={{ marginTop: '32px' }}>
+        <div ref={resultsRef} className="animate-spring-in" style={{ marginTop: '32px' }}>
           {/* Recognition Feedback Banner */}
           {analysisResult.in_database ? (
             <div
